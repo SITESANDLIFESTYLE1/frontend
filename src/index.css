@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.pageHeader {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 4rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 65px;
+  background-color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #848484;
+  padding: 60px 80px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 280px 160px 200px 220px 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Logo Section */
+.footer-logo .logo-placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-license {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.footer-description {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+/* Column Titles */
+.footer-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer-col ul li:hover {
+  opacity: 0.8;
+}
+
+/* Address / Contact */
+.footer-address {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.footer-phone,
+.footer-email {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* Newsletter */
+.newsletter-input-wrapper {
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+  max-width: 260px;
+  height: 38px;
+}
+
+.newsletter-input {
+  flex: 1;
+  border: none;
+  padding: 8px 10px;
+  outline: none;
+  font-size: 13px;
+}
+
+.newsletter-btn {
+  width: 40px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-bottom-links a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 65px;
+  background-color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarNav {
+  width: 100%;
+  margin-top: 0.75rem;
+  overflow-y: hidden;
+}
+
+.navbarListItems {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbarListItem {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarListItemName,
+.navbarListItemNameActive {
+  margin-top: 0.25rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+.navbarListItemNameActive {
+  color: #2c2c2c;
 }
