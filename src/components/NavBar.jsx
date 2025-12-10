@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { ReactComponent as Icon } from "../assets/svg/logo.svg";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -13,6 +14,14 @@ function NavBar() {
   return (
     <>
       <header className="navbar">
+        <p
+          className="navbarListItem"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          <Icon height="200px" width="200px" />
+        </p>
         <nav className="navbarNav">
           <ul className="navbarListItems">
             <li
@@ -60,7 +69,7 @@ function NavBar() {
                     : "navbarListItemName"
                 }
               >
-                Contact Ua
+                Contact Us
               </p>
             </li>
           </ul>

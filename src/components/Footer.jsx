@@ -1,13 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+// import { ReactComponent as Icon } from "../assets/svg/logo.svg";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className="footer-container">
       <div className="footer-content">
         {/* Logo Section */}
         <div className="footer-col footer-logo">
           {/* Replace this with your own logo component */}
-          {/* <LogoComponent /> */}
+          {/* <Icon height="200px" width="200px" /> */}
           <h2 className="logo-placeholder">Sites & Lifestyle</h2>
 
           <p className="footer-license">Licensed Real Estate – DRE #00000.</p>
@@ -31,7 +35,13 @@ function Footer() {
         <div className="footer-col">
           <h4 className="footer-title">Discover Our Projects</h4>
           <ul>
-            <li>Monrovia Orchards</li>
+            <li
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              Monrovia Orchards
+            </li>
           </ul>
         </div>
 
@@ -49,7 +59,7 @@ function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="footer-col newsletter">
+        <div className="footer-col ">
           <h4 className="footer-title">Stay Connected for Insights.</h4>
 
           <div className="newsletter-input-wrapper">

@@ -1,7 +1,180 @@
 import React from "react";
+import HeroSlider from "../components/HeroSlider";
+import AmenitySection from "../components/AmenitySection";
+import FeaturedProperties from "../components/FeaturedProperties";
+import Newsletter from "../components/Newsletter";
+import ClientFeedback from "../components/ClientFeedback";
+import hero1 from "../assets/png/creek.png";
+import hero2 from "../assets/png/SHORE.png";
+import hero3 from "../assets/png/spring.png";
+import hero4 from "../assets/png/Tide.png";
 
 function Home() {
-  return <div className="pageHeader">Home</div>;
+  const properties = [
+    {
+      image: hero1,
+      title: "Creek – 190 SQM",
+      subtitle: "3 Bedroom Townhouse",
+      link: "",
+    },
+    {
+      image: hero2,
+      title: "Shore - 500SQM",
+      subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
+      link: "",
+    },
+    {
+      image: hero3,
+      title: "Spring – 250 SQM",
+      subtitle: "4 Bedroom Twin Villa",
+      link: "",
+    },
+    {
+      image: hero4,
+      title: "TIDE – 400 SQM",
+      subtitle: "4 Bedroom Villa +Maid’s room",
+      link: "",
+    },
+  ];
+  const amenities = [
+    {
+      Icon: hero1,
+      title: "FIBER OPTICS",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "SWIMMING POOL",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "CHILDREN PLAYGROUND",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "SOLAR STRRETLIGHT",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "ORCHARDS",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "SEWAGE SYSTEM",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "CCTV",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "WATER RETICULATION",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "NEGBOURHOOD CENTER",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "CLUBHOUSE",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "VEHICULAR AND PEDESTRIAN PATHWAYS",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+    {
+      Icon: hero1,
+      title: "POWER DISTRIBUTION",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    },
+  ];
+  const homeSlides = [
+    {
+      image: hero1,
+      title: "Sustainable Lifestyle",
+      subtitle: "Residential & Commercial Serviced Plots",
+    },
+    {
+      image: hero2,
+      title: "Sustainable Lifestyle",
+      subtitle: "Residential & Commercial Serviced Plots",
+    },
+    {
+      image: hero3,
+      title: "Sustainable Lifestyle",
+      subtitle: "Residential & Commercial Serviced Plots",
+    },
+    {
+      image: hero4,
+      title: "Sustainable Lifestyle",
+      subtitle: "Residential & Commercial Serviced Plots",
+    },
+  ];
+
+  return (
+    <>
+      <section className="pageHeader">
+        <HeroSlider slides={homeSlides} showButtons={true} />
+      </section>
+      <section className="container">
+        <div className="content">
+          <h2 className="header">
+            <h2 className="header tin-text">
+              <span className="welcome">WELCOME TO </span>
+              <span className="sites">SITES & LIFESTYLE</span>
+            </h2>
+          </h2>
+          <p>
+            We specialize in premium serviced plots, innovative commercial and
+            hospitality developments, designed to enhance living and business
+            environments.
+          </p>
+          <h3 className="tin-text">PREMIUM LIFESTYLE SOLUTIONS</h3>
+          <p>
+            We are a value-driven company committed to offering top-tier real
+            estate services, from curated serviced plots to high-end commercial
+            and hospitality developments, supported by modern ancillary
+            facilities that improve the living experience.
+          </p>
+        </div>
+        <div className="container youtube-section">Youtube Video Section </div>
+      </section>
+      <section className="content">
+        <h2 className="header tin-text">
+          <span className="welcome">WHY OWNERS CHOOSE </span>
+          <span className="sites">SITES & LIFESTYLE</span>
+        </h2>
+        <p>
+          We provide innovative property solutions through trusted partnerships
+          and exceptional service, some of the service include.
+        </p>
+        <AmenitySection amenities={amenities} />
+      </section>
+      <section className="containerx">
+        <h2 className="header tin-text">
+          <span className="welcome">FEATURED</span>
+          <span className="sites">PROPERTIES</span>
+        </h2>
+        <FeaturedProperties properties={properties} />
+      </section>
+      <section className="containerx">
+        <Newsletter />
+      </section>
+      <section className="containerx">
+        <ClientFeedback />
+      </section>
+    </>
+  );
 }
 
 export default Home;
