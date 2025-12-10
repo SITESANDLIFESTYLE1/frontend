@@ -1,19 +1,14 @@
 import PropertyCard from "./PropertyCard";
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function FeaturedProperties({ properties = [] }) {
   const navigate = useNavigate();
-  const [showAll, setShowAll] = useState(false);
+  // const [showAll, setShowAll] = useState(false);
 
-  const visibleProperties = showAll ? properties : properties.slice(0, 3);
+  const visibleProperties = properties.slice(0, 3);
 
   return (
     <div className="featured-wrapper">
-      <h2 className="featured-title">
-        FEATURED <span>PROPERTIES</span>
-      </h2>
-
       <div className="property-section">
         {visibleProperties.map((item, index) => (
           <PropertyCard key={index} {...item} />

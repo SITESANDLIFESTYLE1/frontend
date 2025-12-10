@@ -1,5 +1,5 @@
 import React from "react";
-import newsletter from "../assets/png/newsletter.jpeg";
+import newsletter from "../../assets/png/newsletter.jpeg";
 
 function Newsletter() {
   return (
