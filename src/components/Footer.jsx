@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import { ReactComponent as Icon } from "../assets/svg/logo.svg";
+// import { ReactComponent as Icon } from "../assets/svg/SL1.svg";
 
 function Footer() {
   const navigate = useNavigate();
@@ -10,8 +10,8 @@ function Footer() {
       <div className="footer-content">
         {/* Logo Section */}
         <div className="footer-col footer-logo">
-          {/* Replace this with your own logo component */}
-          {/* <Icon height="200px" width="200px" /> */}
+          {/* <Icon className="navbar-icon" /> */}
+
           <h2 className="logo-placeholder">Sites & Lifestyle</h2>
 
           <p className="footer-license">Licensed Real Estate – DRE #00000.</p>

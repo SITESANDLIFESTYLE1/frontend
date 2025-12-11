@@ -126,33 +126,33 @@ function Home() {
       <section className="pageHeader">
         <HeroSlider slides={homeSlides} showButtons={true} />
       </section>
-      <section className="container">
-        <div className="content">
-          <h2 className="header">
-            <h2 className="header tin-text">
-              <span className="welcome">WELCOME TO </span>
-              <span className="sites">SITES & LIFESTYLE</span>
+      <section className="section container">
+        <div className="layout">
+          <div className="text containerx">
+            <h2 className="header primary">
+              <span className="primary">WELCOME TO </span>
+              <span className="secondary">SITES & LIFESTYLE</span>
             </h2>
-          </h2>
-          <p>
-            We specialize in premium serviced plots, innovative commercial and
-            hospitality developments, designed to enhance living and business
-            environments.
-          </p>
-          <h3 className="tin-text">PREMIUM LIFESTYLE SOLUTIONS</h3>
-          <p>
-            We are a value-driven company committed to offering top-tier real
-            estate services, from curated serviced plots to high-end commercial
-            and hospitality developments, supported by modern ancillary
-            facilities that improve the living experience.
-          </p>
+            <p>
+              We specialize in premium serviced plots, innovative commercial and
+              hospitality developments, designed to enhance living and business
+              environments.
+            </p>
+            <h3 className="tin-text">PREMIUM LIFESTYLE SOLUTIONS</h3>
+            <p>
+              We are a value-driven company committed to offering top-tier real
+              estate services, from curated serviced plots to high-end
+              commercial and hospitality developments, supported by modern
+              ancillary facilities that improve the living experience.
+            </p>
+          </div>
+          <div className="layout-image container">Youtube Video Section</div>
         </div>
-        <div className="container youtube-section">Youtube Video Section </div>
       </section>
       <section className="content">
         <h2 className="header tin-text">
-          <span className="welcome">WHY OWNERS CHOOSE </span>
-          <span className="sites">SITES & LIFESTYLE</span>
+          <span className="primary">WHY OWNERS CHOOSE </span>
+          <span className="secondary">SITES & LIFESTYLE</span>
         </h2>
         <p>
           We provide innovative property solutions through trusted partnerships
@@ -162,8 +162,8 @@ function Home() {
       </section>
       <section className="containerx">
         <h2 className="header tin-text">
-          <span className="welcome">FEATURED</span>
-          <span className="sites">PROPERTIES</span>
+          <span className="primary">FEATURED</span>
+          <span className="secondary">PROPERTIES</span>
         </h2>
         <FeaturedProperties properties={properties} />
       </section>

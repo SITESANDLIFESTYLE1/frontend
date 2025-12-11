@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { ReactComponent as Icon } from "../assets/svg/logo.svg";
+import { ReactComponent as Icon } from "../assets/svg/SL1.svg";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function NavBar() {
             navigate("/");
           }}
         >
-          <Icon height="200px" width="200px" />
+          <Icon className="navbar-icon" />
         </p>
         <nav className="navbarNav">
           <ul className="navbarListItems">
