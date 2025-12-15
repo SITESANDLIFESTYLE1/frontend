@@ -6,17 +6,11 @@
   font-size: 2rem;
   font-weight: 800;
 }
-.newsletter img {
-  max-width: auto !important;
-  height: auto;
+.navbar-icon {
+  padding: 30px;
+  height: 100px;
+  width: 100px;
 }
-
-.newsletter {
-  max-width: 400px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
 .newsletter img {
   width: 400px !important;
   height: 400px !important;
@@ -24,6 +18,16 @@
 
 .newsletter {
   width: 400px;
+  height: 400px;
+  justify-content: center;
+}
+.project-layout img {
+  width: auto !important;
+  height: auto !important;
+}
+
+.project-layout {
+  width: auto;
   height: 400px;
   justify-content: center;
 }
@@ -35,8 +39,18 @@
   display: grid;
   background: #ffffff;
   padding: auto;
-  color: #222;
   font-family: "Inter", sans-serif;
+}
+.map {
+  width: 800;
+  height: 600;
+  border-radius: 3%;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  width: 100%;
 }
 .container {
   display: flex;
@@ -195,6 +209,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+  .map {
+    width: auto;
+    height: auto;
+    border-radius: 3%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -260,6 +280,23 @@
   height: 85vh;
   position: relative;
   overflow: hidden;
+}
+.layout-slider {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+}
+.layout-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: none;
+  transition: opacity 0.5s ease-in-out, transform 5s ease-in-out;
 }
 
 .hero-slide {
@@ -390,10 +427,15 @@
   color: #fff;
   transform: none;
 }
-
 .primary {
+  color: #124a2b;
 }
-
+.secondary {
+  color: #bc9a6c;
+}
+.tertiary {
+  color: #dbd6cc;
+}
 .container {
   width: 90%;
   max-width: 1280px;
@@ -417,7 +459,7 @@ h2.header {
 }
 
 .welcome {
-  color: #6f6f6f;
+  color: #bc9a6c;
   margin-right: 6px;
 }
 
@@ -537,7 +579,13 @@ button.viewMore:hover {
     font-size: 26px;
   }
 }
-
+.all-property-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .property-section {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -627,12 +675,14 @@ button.viewMore:hover {
 
 @media (max-width: 900px) {
   .amenity-section {
+    padding: 5%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .amenity-section {
+    padding: 5%;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -714,9 +764,7 @@ button.viewMore:hover {
   background: white;
   padding: 50px 40px;
   border-radius: 16px;
-
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
-
   width: 100%;
   max-width: 600px;
 }
@@ -851,12 +899,14 @@ button.viewMore:hover {
 
 @media (max-width: 900px) {
   .property-section {
+    padding: 5%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .property-section {
+    padding: 5%;
     grid-template-columns: 1fr;
   }
 
@@ -864,12 +914,11 @@ button.viewMore:hover {
     height: 160px;
   }
 }
-/* ABOUT SECTION */
+
 .about-section {
   padding: 4rem 0;
 }
 
-/* MAIN LAYOUT */
 .about-layout {
   display: flex;
   align-items: flex-start;
@@ -877,14 +926,13 @@ button.viewMore:hover {
   gap: 4rem;
 }
 
-/* LEFT COLUMN — DOMINANT WIDTH */
 .about-left {
-  flex: 2; /* takes most of the space */
-  max-width: 750px; /* spreads text nicely */
+  flex: 2;
+  max-width: 750px;
 }
 
 .about-left h2 {
-  font-size: 3rem; /* significantly larger */
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -897,7 +945,6 @@ button.viewMore:hover {
   margin-bottom: 2.2rem;
 }
 
-/* CTA */
 .about-cta .btn-primary {
   display: inline-block;
   padding: 1rem 2.2rem;
@@ -913,19 +960,17 @@ button.viewMore:hover {
   background: #000;
 }
 
-/* RIGHT COLUMN — CENTERED, NARROWER CARDS */
 .about-right {
-  flex: 1; /* smaller than left */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers cards */
+  align-items: center;
   gap: 1.75rem;
 }
 
-/* CARDS — NARROWER AND CENTERED */
 .about-card {
-  width: 85%; /* keeps them small relative to left column */
-  max-width: 380px; /* ensures compact card width */
+  width: 85%;
+  max-width: 380px;
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
@@ -940,7 +985,6 @@ button.viewMore:hover {
   height: 42px;
 }
 
-/* HEADINGS & TEXT INSIDE CARDS */
 .about-card h3 {
   font-size: 1.15rem;
   font-weight: 600;
@@ -953,7 +997,6 @@ button.viewMore:hover {
   color: #555;
 }
 
-/* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1024px) {
   .about-left h2 {
     font-size: 2.4rem;
@@ -962,6 +1005,7 @@ button.viewMore:hover {
 
 @media (max-width: 900px) {
   .about-layout {
+    padding: 5%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -991,7 +1035,7 @@ button.viewMore:hover {
     font-size: 1.05rem;
   }
 }
-/* CORE VALUES SECTION */
+
 .corevalue-section {
   width: 100%;
   margin-top: 4rem;
@@ -1020,16 +1064,13 @@ button.viewMore:hover {
   color: #555;
 }
 
-/* GRID */
 .corevalue-grid {
   display: grid;
-  /* flex-direction: column; */
   grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem;
   justify-content: center;
 }
 
-/* CARD */
 .corevalue-card-box {
   background: #ffffff;
   padding: 1.8rem 1.4rem;
@@ -1058,9 +1099,9 @@ button.viewMore:hover {
   line-height: 1.5;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .corevalue-grid {
+    padding: 5%;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
   }
@@ -1072,6 +1113,7 @@ button.viewMore:hover {
 
 @media (max-width: 600px) {
   .corevalue-grid {
+    padding: 5%;
     grid-template-columns: 1fr;
   }
 
@@ -1080,37 +1122,36 @@ button.viewMore:hover {
   }
 }
 
-.ceo-section {
+.section {
   padding: auto;
 }
 
-.ceo-layout {
+.layout {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
 }
 
-.ceo-text {
+.text {
   flex: 1;
 }
-.ceo-quote {
+.quote {
   font-size: 1.7rem;
   line-height: 1.7;
   font-weight: 400;
   color: #222;
   width: 100%;
   display: block;
-  text-align: left;
+  text-align: justify;
   margin: 0;
 }
 
-.ceo-profile {
+.profile {
   flex: 1;
   text-align: center;
 }
-
-.ceo-image {
+.layout-image {
   width: 100%;
   max-width: 420px;
   border-radius: 20px;
@@ -1119,7 +1160,16 @@ button.viewMore:hover {
   margin: 0 auto 20px auto;
 }
 
-.ceo-name {
+.image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.name {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -1127,7 +1177,7 @@ button.viewMore:hover {
   color: #000;
 }
 
-.ceo-title {
+.title {
   font-size: 0.9rem;
   color: #555;
   margin-top: 4px;
@@ -1135,51 +1185,50 @@ button.viewMore:hover {
 }
 
 @media (max-width: 992px) {
-  .ceo-layout {
+  .layout {
+    padding: 5%;
     gap: 40px;
   }
 
-  .ceo-quote {
+  .quote {
     font-size: 1.5rem;
     line-height: 1.6;
   }
 }
 
 @media (max-width: 768px) {
-  .ceo-layout {
+  .layout {
+    padding: 5%;
+
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .ceo-text {
+  .text {
     width: 100%;
   }
 
-  .ceo-quote {
+  .quote {
     font-size: 1.4rem;
     margin-top: 20px;
     text-align: center;
   }
 
-  .ceo-image {
+  .image {
     max-width: 350px;
   }
 }
 
 @media (max-width: 480px) {
-  .ceo-quote {
+  .quote {
     font-size: 1.25rem;
     line-height: 1.55;
   }
 
-  .ceo-image {
+  .image {
     max-width: 280px;
   }
 }
-/* ================================
-   BOARD OF DIRECTORS SECTION
-===================================*/
-
 .directors-section {
   padding: auto;
   text-align: center;
@@ -1189,18 +1238,16 @@ button.viewMore:hover {
   font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 600;
-  color: #a3872a; /* Gold tone as seen in Figma */
+  color: #a3872a;
   margin-bottom: 60px;
 }
 
-/* Grid Layout */
 .directors-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
-/* Director Card */
 .director-card {
   background: #ffffff;
   padding: auto;
@@ -1214,18 +1261,14 @@ button.viewMore:hover {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Director Image */
 .director-image {
   width: 100%;
   height: 260px;
   object-fit: cover;
-  /* border-radius: 10px; */
   border-radius: 10px 10px 0 0;
-
   margin-bottom: 15px;
 }
 
-/* Name & Title */
 .director-name {
   font-size: 0.95rem;
   font-weight: 700;
@@ -1242,13 +1285,10 @@ button.viewMore:hover {
   text-transform: uppercase;
 }
 
-/* ================================
-   RESPONSIVENESS
-===================================*/
-
-/* Tablets */
 @media (max-width: 992px) {
   .directors-grid {
+    padding: 5%;
+
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -1258,7 +1298,6 @@ button.viewMore:hover {
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .directors-grid {
     grid-template-columns: 1fr;
@@ -1273,4 +1312,206 @@ button.viewMore:hover {
     font-size: 1.7rem;
     margin-bottom: 40px;
   }
+}
+
+.contact-section {
+  width: 100%;
+  background: #fff;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.contact-top {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contact-form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #bc9a6c;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.contact-form-subtext {
+  font-size: 11px;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-big-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #124a2b;
+  line-height: 1.1;
+}
+
+.contact-big-title span {
+  color: #bc9a6c;
+}
+
+.contact-description {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 0.4px;
+  max-width: 320px;
+}
+@media (max-width: 900px) {
+  .contact-content {
+    padding: 5%;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .contact-left {
+    align-items: center;
+  }
+
+  .contact-description {
+    max-width: 100%;
+  }
+}
+
+.contact-form p {
+  padding: auto;
+  font-size: x-small;
+  align-items: center;
+  text-align: start !important;
+}
+.contact-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e5e5;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+  transition: border 0.2s ease;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #999;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #bc9a6c;
+}
+
+.contact-textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+.contact-input select {
+  appearance: none;
+}
+
+.contact-submit-btn {
+  margin-top: 10px;
+  align-self: flex-start;
+  padding: 10px 26px;
+  background: transparent;
+  border: 1px solid #bc9a6c;
+  color: #bc9a6c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.contact-submit-btn:hover {
+  background: #bc9a6c;
+  color: #fff;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: auto;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.contact-big-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.contact-description {
+  margin-top: 14px;
+  max-width: 360px;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.contact-socials a {
+  font-size: 1.25rem;
+  color: #1f2937;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-socials a:hover {
+  color: #124a2b;
+  transform: translateY(-2px);
+}
+.footer-socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-socials a {
+  font-size: 1.25rem;
+  color: #fff;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #e5e5e5;
+
+  transform: translateY(-2px);
 }

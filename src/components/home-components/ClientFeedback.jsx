@@ -6,8 +6,8 @@ function ClientFeedback() {
     <section className="client-feedback-wrapper">
       <div className="client-feedback-container">
         <h2 className="client-feedback-title header">
-          <span className="welcome">OUR HAPPY CLIENTS </span>
-          <span className="sites">TESTIMONIALS</span>
+          <span className="primary">OUR HAPPY CLIENTS </span>
+          <span className="secondary">TESTIMONIALS</span>
         </h2>
 
         <div className="client-feedback-content">

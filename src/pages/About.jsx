@@ -4,20 +4,32 @@ import AboutSection from "../components/about-components/AboutSection";
 import CoreValuesSection from "../components/about-components/CoreValuesSection";
 import CeoSection from "../components/about-components/CeoSection";
 import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
+import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
 
 function About() {
   const values = [
-    { title: "PASSION", description: "We bring genuine enthusiasm..." },
     {
+      icon: FiHeart,
+      title: "PASSION",
+      description: "We bring genuine enthusiasm...",
+    },
+    {
+      icon: FiZap,
       title: "INNOVATION",
       description: "We deliver smart, forward-thinking solutions...",
     },
     {
+      icon: FiAward,
       title: "EXCELLENCE",
       description: "We hold ourselves to high standards...",
     },
-    { title: "COLLABORATION", description: "We work closely with clients..." },
     {
+      icon: FiUsers,
+      title: "COLLABORATION",
+      description: "We work closely with clients...",
+    },
+    {
+      icon: FiTrendingUp,
       title: "EFFICIENCY",
       description: "We minimize delays and deliver quickly...",
     },

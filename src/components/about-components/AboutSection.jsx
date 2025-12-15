@@ -6,8 +6,8 @@ export default function AboutSection() {
       <div className="about-layout">
         <div className="about-left column">
           <h2 className="header tin-text">
-            <span className="welcome">ABOUT</span>
-            <span className="sites">SITES & LIFESTYLE</span>
+            <span className="primary">ABOUT</span>
+            <span className="secoundary"> SITES & LIFESTYLE</span>
           </h2>
           <p className="">
             We also offer commercial real estate developments and luxury

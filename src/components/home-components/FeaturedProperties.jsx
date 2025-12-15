@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 function FeaturedProperties({ properties = [] }) {
   const navigate = useNavigate();
-  // const [showAll, setShowAll] = useState(false);
 
   const visibleProperties = properties.slice(0, 3);
 
