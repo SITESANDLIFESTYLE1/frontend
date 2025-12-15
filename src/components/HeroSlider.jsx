@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function HeroSlider({ slides = [], showButtons = false }) {
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -30,7 +32,14 @@ function HeroSlider({ slides = [], showButtons = false }) {
 
               {showButtons && (
                 <div className="hero-buttons">
-                  <button className="hero-btn primary">Schedule a Tour</button>
+                  <button
+                    className="hero-btn primary"
+                    onClick={() => {
+                      navigate("/contact");
+                    }}
+                  >
+                    Schedule a Tour
+                  </button>
                   <button className="hero-btn secondary">
                     Become An Affiliate
                   </button>

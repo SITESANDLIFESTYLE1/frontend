@@ -18,6 +18,7 @@ function CoreValuesSection({ values = [] }) {
         {values.map((item, index) => (
           <CoreValueCard
             key={index}
+            icon={item.icon}
             title={item.title}
             description={item.description}
           />

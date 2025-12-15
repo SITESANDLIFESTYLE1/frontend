@@ -8,6 +8,16 @@ import hero1 from "../assets/png/creek.png";
 import hero2 from "../assets/png/SHORE.png";
 import hero3 from "../assets/png/spring.png";
 import hero4 from "../assets/png/Tide.png";
+import { FiWifi, FiSun, FiUsers, FiVideo } from "react-icons/fi";
+import {
+  FaSwimmingPool,
+  FaChild,
+  FaTree,
+  FaWater,
+  FaRoad,
+  FaBuilding,
+  FaPlug,
+} from "react-icons/fa";
 
 function Home() {
   const properties = [
@@ -38,62 +48,62 @@ function Home() {
   ];
   const amenities = [
     {
-      Icon: hero1,
+      icon: FiWifi,
       title: "FIBER OPTICS",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaSwimmingPool,
       title: "SWIMMING POOL",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaChild,
       title: "CHILDREN PLAYGROUND",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FiSun,
       title: "SOLAR STRRETLIGHT",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaTree,
       title: "ORCHARDS",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaWater,
       title: "SEWAGE SYSTEM",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FiVideo,
       title: "CCTV",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaWater,
       title: "WATER RETICULATION",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FiUsers,
       title: "NEGBOURHOOD CENTER",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaBuilding,
       title: "CLUBHOUSE",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaRoad,
       title: "VEHICULAR AND PEDESTRIAN PATHWAYS",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
-      Icon: hero1,
+      icon: FaPlug,
       title: "POWER DISTRIBUTION",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
