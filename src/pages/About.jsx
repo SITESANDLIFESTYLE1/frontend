@@ -25,9 +25,9 @@ function About() {
         "Expert guidance across the realestate value chain helping clients assess opportunities, manage risks, and make informed property decisions aligned with their goals.",
     },
     {
-      title: "PROJECT MANAGEMEN",
+      title: "PROJECT MANAGEMENT",
       description:
-        "End-to-end coordination of real estate projects — overseeing planning, execution, timelines, budgets, and quality to deliver successful developments efficiently and professionally.",
+        "End-to-end coordination of real estate projects overseeing planning, execution, timelines, budgets, and quality to deliver successful developments efficiently and professionally.",
     },
   ];
 

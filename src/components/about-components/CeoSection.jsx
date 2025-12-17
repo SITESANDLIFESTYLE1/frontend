@@ -13,8 +13,8 @@ function CeoSection() {
 
         <div className="profile">
           <img src={CEO} alt="CEO" className="image" />
-          <h3 className="cname">YAHYA AHMAD RUFAI</h3>
-          <p className="ctitle">CHIEF EXECUTIVE OFFICER</p>
+          <h3 className="name">YAHYA AHMAD RUFAI</h3>
+          <p className="title">CHIEF EXECUTIVE OFFICER</p>
         </div>
       </div>
     </section>

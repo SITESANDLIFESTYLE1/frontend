@@ -10,7 +10,7 @@ function AffiliateSection() {
             SUBMIT A FORM TO BECOME AN AFFILIATE
           </h2>
           <p className="contact-form-subtext">
-            Fill out the form below to join Affiliate Program.
+            Fill out the form below to join our Affiliate Program.
           </p>
         </div>
 

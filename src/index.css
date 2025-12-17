@@ -1190,9 +1190,9 @@ button.viewMore:hover {
 }
 
 .title {
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   color: #555;
-  margin-top: 4px;
+  /* margin-top: 4px; */
   letter-spacing: 0.4px;
 }
 
@@ -1293,14 +1293,12 @@ button.viewMore:hover {
   font-size: 0.7rem !important;
   letter-spacing: 0.4px;
   color: #666;
-  margin-top: 4px;
   text-transform: uppercase;
 }
 
 @media (max-width: 992px) {
   .directors-grid {
     padding: 5%;
-
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -1534,6 +1532,19 @@ button.viewMore:hover {
 
 .footer-socials a:hover {
   color: #e5e5e5;
-
   transform: translateY(-2px);
+}
+.footer-address a,
+.footer-phone a,
+.footer-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-address a:hover,
+.footer-phone a:hover,
+.footer-email a:hover {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  opacity: 0.8;
 }

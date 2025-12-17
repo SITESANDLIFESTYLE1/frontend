@@ -20,6 +20,7 @@ function Footer() {
       const res = await subscribeNewsletter({ email });
       toast.success("Your subscribing was successfully");
     } catch (err) {
+      console.log(err);
       toast.error("Something went wrong");
     }
   };
@@ -84,12 +85,26 @@ function Footer() {
           <h4 className="footer-title">Contact Information</h4>
 
           <p className="footer-address">
-            Suite 001, Ground Floor, Adamawa Plaza, Central Business Districts,
-            Abuja.
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Adamawa+Plaza+Central+Business+District+Abuja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Suite 001, Ground Floor, Adamawa Plaza, Central Business
+              Districts, Abuja.
+            </a>
           </p>
 
-          <p className="footer-phone">0700-011-1111</p>
-          <p className="footer-email">info@sitesandlifestyle.com</p>
+          <p className="footer-phone">
+            <a href="tel:+2347000111111">0700-011-1111</a>
+          </p>
+
+          <p className="footer-email">
+            <a href="mailto:info@sitesandlifestyle.com">
+              info@sitesandlifestyle.com
+            </a>
+          </p>
+
           <div className="footer-socials">
             <a
               href="https://www.instagram.com/sitesandlifestyle/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
