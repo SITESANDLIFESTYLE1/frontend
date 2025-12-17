@@ -32,7 +32,7 @@ export default function ContactSection() {
             </p>
             <div className="contact-socials">
               <a
-                href="https://instagram.com/yourpage"
+                href="https://www.instagram.com/sitesandlifestyle/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -41,7 +41,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://linkedin.com/company/yourpage"
+                href="https://www.linkedin.com/company/sites-nd-lifestyle/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -50,7 +50,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://facebook.com/yourpage"
+                href="https://www.facebook.com/people/Sites-and-lifestyle/61571418703102/?sk=about"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

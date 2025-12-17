@@ -4,6 +4,7 @@ import Project from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Affiliate from "./pages/Affiliate.jsx";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/affiliate" element={<Affiliate />} />
         </Routes>
         <Footer />
       </Router>

@@ -40,7 +40,12 @@ function HeroSlider({ slides = [], showButtons = false }) {
                   >
                     Schedule a Tour
                   </button>
-                  <button className="hero-btn secondary">
+                  <button
+                    className="hero-btn secondary"
+                    onClick={() => {
+                      navigate("/affiliate");
+                    }}
+                  >
                     Become An Affiliate
                   </button>
                 </div>

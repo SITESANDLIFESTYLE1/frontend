@@ -18,6 +18,10 @@ import {
   FaBuilding,
   FaPlug,
 } from "react-icons/fa";
+import creek from "../assets/pdf/creek.pdf";
+import shore from "../assets/pdf/shore.pdf";
+import Spring from "../assets/pdf/Spring.pdf";
+import Tide from "../assets/pdf/Tide.pdf";
 
 function Home() {
   const properties = [
@@ -25,25 +29,25 @@ function Home() {
       image: hero1,
       title: "Creek – 190 SQM",
       subtitle: "3 Bedroom Townhouse",
-      link: "",
+      link: creek,
     },
     {
       image: hero2,
       title: "Shore - 500SQM",
       subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
-      link: "",
+      link: shore,
     },
     {
       image: hero3,
       title: "Spring – 250 SQM",
       subtitle: "4 Bedroom Twin Villa",
-      link: "",
+      link: Spring,
     },
     {
       image: hero4,
       title: "TIDE – 400 SQM",
       subtitle: "4 Bedroom Villa +Maid’s room",
-      link: "",
+      link: Tide,
     },
   ];
   const amenities = [

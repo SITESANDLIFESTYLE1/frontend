@@ -8,7 +8,7 @@ function AmenitySection({ amenities = [] }) {
   const visibleAmenities = showAll ? amenities : amenities.slice(0, 6);
 
   return (
-    <div className="amenity-section grid-layout">
+    <div className="corevalue-grid ">
       {visibleAmenities.map((item, index) => (
         <AmenityCard
           key={index}

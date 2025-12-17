@@ -479,11 +479,14 @@ h2.header {
   margin: 40px auto;
   max-width: 900px;
 }
-
+.content h2 {
+  margin: 40px;
+}
 .content p {
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 25px;
+  margin: 40px auto;
   color: #444;
 }
 .amenity-section {
@@ -1064,6 +1067,12 @@ button.viewMore:hover {
   color: #555;
 }
 
+.ourservices-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  justify-content: center;
+}
 .corevalue-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1116,7 +1125,10 @@ button.viewMore:hover {
     padding: 5%;
     grid-template-columns: 1fr;
   }
-
+  .ourservices-grid {
+    padding: 5%;
+    grid-template-columns: 1fr;
+  }
   .corevalue-main {
     font-size: 24px;
   }
@@ -1366,7 +1378,13 @@ button.viewMore:hover {
 .contact-big-title span {
   color: #bc9a6c;
 }
-
+.affiliate-description {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.4px;
+  max-width: 500px;
+}
 .contact-description {
   margin-top: 10px;
   font-size: 11px;
@@ -1466,7 +1484,11 @@ button.viewMore:hover {
   flex-direction: column;
   justify-content: left;
 }
-
+.affiliate-big-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.05;
+}
 .contact-big-title {
   font-size: 48px;
   font-weight: 800;
