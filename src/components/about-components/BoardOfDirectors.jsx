@@ -45,7 +45,7 @@ function BoardOfDirectors() {
       image: Musa,
     },
     {
-      name: "MUSA AHJO",
+      name: "MUSA AHIJO",
       title: "EXECUTIVE DIRECTOR",
       image: "",
     },

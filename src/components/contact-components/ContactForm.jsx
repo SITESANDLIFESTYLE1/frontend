@@ -1,8 +1,8 @@
-import { sendContactForm, bookTour } from "../../api";
 import { useState } from "react";
+import { sendContactForm, bookTour } from "../../api";
 import { toast } from "react-toastify";
 
-export default function ContactForm() {
+function ContactForm() {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -50,7 +50,7 @@ export default function ContactForm() {
   const isTourBooking = form.interest === "Schedule a Tour";
 
   return (
-    <div className="contact-form">
+    <form onSubmit={handleSubmit} className="contact-form">
       <input
         className="contact-input"
         placeholder="Full Name *"
@@ -82,6 +82,7 @@ export default function ContactForm() {
         required
       >
         <option value="">What are you interested in?</option>
+        <option value="Enquiry">Enquiry</option>
         <option value="Consultation">Consultation</option>
         <option value="Schedule a Tour">Schedule a Tour</option>
       </select>
@@ -120,9 +121,10 @@ export default function ContactForm() {
         marketing communications.
       </p>
 
-      <button onClick={handleSubmit} className="contact-submit-btn">
+      <button className="contact-submit-btn" type="submit">
         SUBMIT
       </button>
-    </div>
+    </form>
   );
 }
+export default ContactForm;

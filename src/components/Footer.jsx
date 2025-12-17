@@ -35,16 +35,34 @@ function Footer() {
 
           <p className="footer-license">Licensed Real Estate – DRE #00000.</p>
           <p className="footer-description">
-            Top Tier Real Estate Residential And Commercial Serviced Plots.
+            Building Serviced Communities for Sustainable Living.
           </p>
         </div>
 
         <div className="footer-col">
           <h4 className="footer-title">Our Company</h4>
           <ul>
-            <li>Serviced Plots</li>
-            <li>Affiliate Portal</li>
-            <li>Available Properties</li>
+            <li
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              Serviced Plots
+            </li>
+            <li
+              onClick={() => {
+                navigate("/affiliate");
+              }}
+            >
+              Affiliate Portal
+            </li>
+            <li
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              Available Properties
+            </li>
             <li>Privacy Policy</li>
           </ul>
         </div>
@@ -74,7 +92,7 @@ function Footer() {
           <p className="footer-email">info@sitesandlifestyle.com</p>
           <div className="footer-socials">
             <a
-              href="https://instagram.com/yourpage"
+              href="https://www.instagram.com/sitesandlifestyle/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -83,7 +101,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/company/yourpage"
+              href="https://www.linkedin.com/company/sites-nd-lifestyle/?viewAsMember=true"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -92,7 +110,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://facebook.com/yourpage"
+              href="https://www.facebook.com/people/Sites-and-lifestyle/61571418703102/?sk=about"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -110,8 +128,6 @@ function Footer() {
             </a>
           </div>
         </div>
-
-        {/* Newsletter */}
         <div className="footer-col ">
           <h4 className="footer-title">Stay Connected for Insights.</h4>
 

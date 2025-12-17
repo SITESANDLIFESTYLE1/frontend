@@ -5,33 +5,57 @@ import CoreValuesSection from "../components/about-components/CoreValuesSection"
 import CeoSection from "../components/about-components/CeoSection";
 import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
 import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
+import OurServicesSection from "../components/about-components/OurServicesSection";
 
 function About() {
+  const OurServices = [
+    {
+      title: "PROPERTY DEVELOPMENT",
+      description:
+        "The planning, design, and construction of residential or commercial real estate turning rawland into premium, serviced plotsand lifestyle communities with modern infrastructure.",
+    },
+    {
+      title: "INVESTMENT ADVISOR",
+      description:
+        "Strategic insights to help inves-tors maximize returns offering tailored real estate investmentoptions, due diligence, and portfolio planning to ensure profitable outcomes.",
+    },
+    {
+      title: "ADVISORY SERVICES",
+      description:
+        "Expert guidance across the realestate value chain helping clients assess opportunities, manage risks, and make informed property decisions aligned with their goals.",
+    },
+    {
+      title: "PROJECT MANAGEMEN",
+      description:
+        "End-to-end coordination of real estate projects — overseeing planning, execution, timelines, budgets, and quality to deliver successful developments efficiently and professionally.",
+    },
+  ];
+
   const values = [
     {
       icon: FiHeart,
       title: "PASSION",
-      description: "We bring genuine enthusiasm...",
+      description: "Upholding dedication towards achieving our goals.",
     },
     {
       icon: FiZap,
       title: "INNOVATION",
-      description: "We deliver smart, forward-thinking solutions...",
+      description: "Generating new solutions for value creation.",
     },
     {
       icon: FiAward,
       title: "EXCELLENCE",
-      description: "We hold ourselves to high standards...",
+      description: "Striving for consistent delivery of high-quality services.",
     },
     {
       icon: FiUsers,
       title: "COLLABORATION",
-      description: "We work closely with clients...",
+      description: "Ensuring cooperation within our team & partners.",
     },
     {
       icon: FiTrendingUp,
       title: "EFFICIENCY",
-      description: "We minimize delays and deliver quickly...",
+      description: "Maximizing productivity, minimizing waste.",
     },
   ];
   const projectSlides = [
@@ -49,6 +73,9 @@ function About() {
       </section>
       <section className="container">
         <AboutSection />
+      </section>
+      <section className="content">
+        <OurServicesSection values={OurServices} />
       </section>
       <section className="content">
         <CoreValuesSection values={values} />
