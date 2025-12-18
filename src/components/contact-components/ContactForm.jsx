@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { sendContactForm, bookTour } from "../../api";
-import { toast } from "react-toastify";
 
 function ContactForm() {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+  const [fieldErrors, setFieldErrors] = useState({});
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -12,15 +16,63 @@ function ContactForm() {
     date: "",
     time: "",
   });
+  const scrollToFirstError = (errors) => {
+    const firstField = Object.keys(errors)[0];
+    const element = document.getElementById(firstField);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      element.focus();
+    }
+  };
+
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (!form.name.trim()) errors.name = "Full name is required";
+    if (!form.email.trim()) errors.email = "Email is required";
+    else if (!isValidEmail(form.email))
+      errors.email = "Enter a valid email address";
+
+    if (!form.interest) errors.interest = "Please select an option";
+
+    if (form.interest === "Schedule a Tour") {
+      if (!form.date) errors.date = "Please select a date";
+      if (!form.time) errors.time = "Please select a time";
+    }
+
+    setFieldErrors(errors);
+
+    if (Object.keys(errors).length > 0) {
+      scrollToFirstError(errors);
+      return false;
+    }
+
+    return true;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setSuccess("");
+    setError("");
+
+    if (!validateForm()) return;
+
+    setLoading(true);
+
     try {
       if (form.interest === "Schedule a Tour") {
         const [hours, minutes] = form.time.split(":");
-        // eslint-disable-next-line
-        const res = await bookTour({
+
+        await bookTour({
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -28,10 +80,12 @@ function ContactForm() {
           hours,
           minutes,
         });
-        toast.success("Tour booked successfully");
+
+        setSuccess(
+          "Your tour has been scheduled successfully. Our team will contact you shortly."
+        );
       } else {
-        // eslint-disable-next-line
-        const res = await sendContactForm({
+        await sendContactForm({
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -39,11 +93,35 @@ function ContactForm() {
           message: form.message,
         });
 
-        toast.success("Form submitted successfully");
+        setSuccess(
+          "Thank you for reaching out. Your inquiry has been sent successfully."
+        );
       }
+
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        interest: "",
+        message: "",
+        date: "",
+        time: "",
+      });
+
+      setFieldErrors({});
+
+      // Auto-hide success after 4 seconds
+      setTimeout(() => setSuccess(""), 7000);
     } catch (err) {
       console.error(err);
-      toast.error("Something went wrong");
+      setError(
+        "Something went wrong while submitting the form. Please try again."
+      );
+
+      // Auto-hide error after 5 seconds
+      setTimeout(() => setError(""), 7000);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -52,7 +130,8 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="contact-form">
       <input
-        className="contact-input"
+        id="name"
+        className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
         placeholder="Full Name *"
         value={form.name}
         onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -60,15 +139,19 @@ function ContactForm() {
       />
 
       <input
-        className="contact-input"
+        className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
         placeholder="Phone"
         value={form.phone}
         onChange={(e) => setForm({ ...form, phone: e.target.value })}
       />
+      {fieldErrors.email && (
+        <small className="field-error">{fieldErrors.email}</small>
+      )}
 
       <input
+        id="email"
         type="email"
-        className="contact-input"
+        className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
         placeholder="Email *"
         value={form.email}
         onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -76,7 +159,8 @@ function ContactForm() {
       />
 
       <select
-        className="contact-input"
+        id="interest"
+        className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
         value={form.interest}
         onChange={(e) => setForm({ ...form, interest: e.target.value })}
         required
@@ -90,8 +174,9 @@ function ContactForm() {
       {isTourBooking ? (
         <>
           <input
+            id="date"
             type="date"
-            className="contact-input"
+            className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
             value={form.date}
             onChange={(e) => setForm({ ...form, date: e.target.value })}
             required
@@ -99,7 +184,8 @@ function ContactForm() {
 
           <input
             type="time"
-            className="contact-input"
+            id="time"
+            className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
             value={form.time}
             onChange={(e) => setForm({ ...form, time: e.target.value })}
             required
@@ -107,7 +193,7 @@ function ContactForm() {
         </>
       ) : (
         <textarea
-          className="contact-input"
+          className={`contact-input ${fieldErrors.name ? "input-error" : ""}`}
           placeholder="Message"
           rows={5}
           value={form.message}
@@ -120,9 +206,22 @@ function ContactForm() {
         acknowledge and agree to our Privacy Policy and consent to receiving
         marketing communications.
       </p>
+      {success && (
+        <div className="form-feedback success">
+          <strong>Success</strong>
+          <p>{success}</p>
+        </div>
+      )}
 
-      <button className="contact-submit-btn" type="submit">
-        SUBMIT
+      {error && (
+        <div className="form-feedback error">
+          <strong>Submission failed</strong>
+          <p>{error}</p>
+        </div>
+      )}
+
+      <button className="contact-submit-btn" type="submit" disabled={loading}>
+        {loading ? "Submitting..." : "SUBMIT"}
       </button>
     </form>
   );
