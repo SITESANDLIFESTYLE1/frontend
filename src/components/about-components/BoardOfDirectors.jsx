@@ -44,11 +44,11 @@ function BoardOfDirectors() {
       title: "EXECUTIVE DIRECTOR",
       image: Musa,
     },
-    {
-      name: "MUSA AHIJO",
-      title: "EXECUTIVE DIRECTOR",
-      image: "",
-    },
+    // {
+    //   name: "MUSA AHIJO",
+    //   title: "EXECUTIVE DIRECTOR",
+    //   image: "",
+    // },
   ];
 
   return (

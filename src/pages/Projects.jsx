@@ -41,15 +41,30 @@ function Projects() {
   ];
   const projectSlides = [
     {
-      image: "/images/project-hero.jpg",
+      image: hero2,
       title: "Monrovia Orchards",
-      text: "A premium residential community.",
+      subtitle: "",
+    },
+    {
+      image: hero1,
+      title: "Monrovia Orchards",
+      subtitle: "",
+    },
+    {
+      image: hero3,
+      title: "Monrovia Orchards",
+      subtitle: "",
+    },
+    {
+      image: hero4,
+      title: "Monrovia Orchards",
+      subtitle: "",
     },
   ];
 
   return (
     <>
-      <div className="pageHeader">
+      <div>
         <HeroSlider slides={projectSlides} showButtons={false} />
       </div>
       <section className="content">

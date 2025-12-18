@@ -11,7 +11,7 @@ export default function ContactSection() {
     <section className="contact-section">
       <div className="contact-container">
         <div className="contact-top">
-          <h2 className="contact-big-title secondary">SUBMIT A MESSAGE</h2>
+          <h2 className="contact-big-title secondary"> CONTACT US</h2>
           <p className="contact-form-subtext">
             Fill out the form below to learn more about buying or selling a
             house in your area.
@@ -20,11 +20,11 @@ export default function ContactSection() {
 
         <div className="contact-content">
           <div className="contact-left">
-            <h2 className="contact-big-title">
+            <h3 className="contact-big-title-h3">
               SUSTAINABLE
               <br />
               <span>LIFESTYLE</span>
-            </h2>
+            </h3>
 
             <p className="contact-description">
               WE PROVIDE INNOVATIVE PROPERTY SOLUTIONS THROUGH TRUSTED

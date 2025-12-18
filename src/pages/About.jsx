@@ -6,6 +6,7 @@ import CeoSection from "../components/about-components/CeoSection";
 import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
 import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
 import OurServicesSection from "../components/about-components/OurServicesSection";
+import abouthero from "../assets/jpeg/abouthero.jpeg";
 
 function About() {
   const OurServices = [
@@ -60,7 +61,7 @@ function About() {
   ];
   const projectSlides = [
     {
-      image: "/images/project-hero.jpg",
+      image: abouthero,
       title: "About Us",
       text: "",
     },
@@ -68,7 +69,7 @@ function About() {
 
   return (
     <>
-      <section className="pageHeader">
+      <section>
         <HeroSlider slides={projectSlides} showButtons={false} />
       </section>
       <section className="container">

@@ -137,7 +137,7 @@ function Home() {
 
   return (
     <>
-      <section className="pageHeader">
+      <section>
         <HeroSlider slides={homeSlides} showButtons={true} />
       </section>
       <section className="section container">
