@@ -8,22 +8,41 @@ import {
   FaFacebookF,
   FaXTwitter,
 } from "react-icons/fa6";
-import { toast } from "react-toastify";
 
 function Footer() {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
+
+    setSuccess("");
+    setError("");
+    setLoading(true);
+
     try {
-      // eslint-disable-next-line
-      const res = await subscribeNewsletter({ email });
-      toast.success("Your subscribing was successfully");
+      await subscribeNewsletter({ email });
+
+      setSuccess(
+        "Thank you for subscribing. You’ll now receive updates and insights from Sites & Lifestyle."
+      );
+
+      setEmail("");
+
+      setTimeout(() => setSuccess(""), 7000);
     } catch (err) {
-      console.log(err);
-      toast.error("Something went wrong");
+      console.error(err);
+      setError(
+        "Something went wrong while subscribing. Please try again shortly."
+      );
+      setTimeout(() => setError(""), 7000);
+    } finally {
+      setLoading(false);
     }
   };
+
   const navigate = useNavigate();
 
   return (
@@ -153,10 +172,15 @@ function Footer() {
               className="newsletter-input"
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button type="submit" className="newsletter-btn">
-              🔔
+            <button type="submit" className="newsletter-btn" disabled={loading}>
+              {loading ? "…" : "🔔"}
             </button>
           </form>
+          {success && (
+            <div className="newsletter-feedback success">{success}</div>
+          )}
+
+          {error && <div className="newsletter-feedback error">{error}</div>}
         </div>
       </div>
 
