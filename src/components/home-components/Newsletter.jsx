@@ -9,7 +9,7 @@ function Newsletter() {
         <span className="secondary">UPDATE</span>
       </h2>
 
-      <div className="container newsletter">
+      <div className="newsletter">
         <img src={newsletter} alt="Newsletter" />
       </div>
     </>

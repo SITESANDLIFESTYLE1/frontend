@@ -24,9 +24,11 @@ function MonroviaOverview() {
           <MonroviaSwiper slides={Monroviaslides} />
         </div>
         <div className="text containerx">
-          <h2 className="header primary">
-            Sites And Lifestyle Monrovia Orchards
+          <h2 className="header">
+            <span className="primary"> Sites And Lifestyle</span>
+            <span className="secondary"> Monrovia Orchards</span>
           </h2>
+
           <p className="quote">
             Nestled on 7.87 hectares in the serene Idu Sabo district, just
             behind Brains & Hammers City, Monrovia Orchards is a thoughtfully

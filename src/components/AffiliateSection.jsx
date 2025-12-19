@@ -6,7 +6,7 @@ function AffiliateSection() {
     <section className="contact-section">
       <div className="contact-container">
         <div className="contact-top">
-          <h2 className="contact-big-title ">BECOME AN AFFILIATE</h2>
+          <h2 className="hero-title primary">BECOME AN AFFILIATE</h2>
           <p>Fill out the form below to join our Affiliate Program.</p>
         </div>
 

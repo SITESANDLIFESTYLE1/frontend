@@ -54,84 +54,72 @@ function Home() {
     {
       icon: FiWifi,
       title: "FIBER OPTICS",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaSwimmingPool,
       title: "SWIMMING POOL",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaChild,
       title: "CHILDREN PLAYGROUND",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FiSun,
       title: "SOLAR STRRETLIGHT",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaTree,
       title: "ORCHARDS",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaWater,
       title: "SEWAGE SYSTEM",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FiVideo,
       title: "CCTV",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaWater,
       title: "WATER RETICULATION",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FiUsers,
       title: "NEGBOURHOOD CENTER",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaBuilding,
       title: "CLUBHOUSE",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaRoad,
       title: "VEHICULAR AND PEDESTRIAN PATHWAYS",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
     {
       icon: FaPlug,
       title: "POWER DISTRIBUTION",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     },
   ];
   const homeSlides = [
     {
       image: hero1,
       title: "Sustainable Lifestyle",
-      subtitle: "Residential & Commercial Serviced Plots",
+      subtitle: "Premium Residential & Commercial Serviced Plots",
     },
     {
       image: hero2,
       title: "Sustainable Lifestyle",
-      subtitle: "Residential & Commercial Serviced Plots",
+      subtitle: "Premium Residential & Commercial Serviced Plots",
     },
     {
       image: hero3,
       title: "Sustainable Lifestyle",
-      subtitle: "Residential & Commercial Serviced Plots",
+      subtitle: "Premium Residential & Commercial Serviced Plots",
     },
     {
       image: hero4,
       title: "Sustainable Lifestyle",
-      subtitle: "Residential & Commercial Serviced Plots",
+      subtitle: "Premium Residential & Commercial Serviced Plots",
     },
   ];
 
@@ -140,27 +128,29 @@ function Home() {
       <section>
         <HeroSlider slides={homeSlides} showButtons={true} />
       </section>
-      <section className="section container">
-        <div className="layout">
+      <section className="container ">
+        <div className="layou t">
           <div className="text containerx">
-            <h2 className="header primary">
+            <h2 className="header primary header-section">
               <span className="primary">WELCOME TO </span>
               <span className="secondary">SITES & LIFESTYLE</span>
             </h2>
-            <p>
-              We specialize in premium serviced plots, innovative commercial and
-              hospitality developments, designed to enhance living and business
-              environments.
-            </p>
-            <h3 className="tin-text">PREMIUM LIFESTYLE SOLUTIONS</h3>
-            <p>
-              We are a value-driven company committed to offering top-tier real
-              estate services, from curated serviced plots to high-end
-              commercial and hospitality developments, supported by modern
-              ancillary facilities that improve the living experience.
+            <p className="overview-text">
+              Sites & Lifestyle Limited was established by the visionary
+              founders of the Bilaad Group with a clear purpose: to make home
+              ownership seamless, accessible, and aspirational. We specialize in
+              the development of serviced plots within well-gated, serene, and
+              family-friendly communities, thoughtfully designed to redefine
+              modern living.
+              <br />
+              Beyond residential developments, we also create vibrant commercial
+              hubs and luxury hospitality experiences. Each project is carefully
+              crafted to blend contemporary amenities with lifestyle-driven
+              design—because we believe every space should inspire the life you
+              deserve.
             </p>
           </div>
-          <div className="layout-image container">Youtube Video Section</div>
+          {/* <div className="layout-image container">Youtube Video Section</div> */}
         </div>
       </section>
       <section className="content">

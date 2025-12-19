@@ -6,6 +6,7 @@ import CeoSection from "../components/about-components/CeoSection";
 import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
 import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
 import OurServicesSection from "../components/about-components/OurServicesSection";
+// eslint-disable-next-line
 import abouthero from "../assets/jpeg/abouthero.jpeg";
 
 function About() {
@@ -61,7 +62,7 @@ function About() {
   ];
   const projectSlides = [
     {
-      image: abouthero,
+      image: "abouthero",
       title: "About Us",
       text: "",
     },
@@ -76,13 +77,13 @@ function About() {
         <AboutSection />
       </section>
       <section className="content">
+        <CeoSection />
+      </section>
+      <section className="content">
         <OurServicesSection values={OurServices} />
       </section>
       <section className="content">
         <CoreValuesSection values={values} />
-      </section>
-      <section className="content">
-        <CeoSection />
       </section>
       <section className="content">
         <BoardOfDirectors />

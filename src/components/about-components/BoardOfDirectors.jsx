@@ -53,7 +53,10 @@ function BoardOfDirectors() {
 
   return (
     <section className="directors-section containerx">
-      <h2 className="directors-heading">BOARD OF DIRECTORS</h2>
+      <h2 className="directors-heading">
+        <span className="primary">BOARD OF</span>
+        <span className="secondary"> DIRECTORS</span>
+      </h2>
 
       <div className="directors-grid">
         {directors.map((director, index) => (
