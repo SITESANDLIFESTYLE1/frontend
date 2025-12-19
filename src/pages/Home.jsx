@@ -171,9 +171,9 @@ function Home() {
         </h2>
         <FeaturedProperties properties={properties} />
       </section>
-      <section className="containerx">
+      {/* <section className="containerx">
         <Newsletter />
-      </section>
+      </section> */}
       <section className="containerx">
         <ClientFeedback />
       </section>

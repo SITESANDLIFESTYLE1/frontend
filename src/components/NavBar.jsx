@@ -29,6 +29,7 @@ function NavBar() {
             { label: "About Us", path: "/about" },
             { label: "Project", path: "/projects" },
             { label: "Contact Us", path: "/contact" },
+            { label: "Affiliate", path: "/affiliate" },
           ].map((item) => (
             <li
               key={item.path}
@@ -61,6 +62,7 @@ function NavBar() {
             { label: "About Us", path: "/about" },
             { label: "Project", path: "/projects" },
             { label: "Contact Us", path: "/contact" },
+            { label: "Affiliate", path: "/affiliate" },
           ].map((item) => (
             <p
               key={item.path}

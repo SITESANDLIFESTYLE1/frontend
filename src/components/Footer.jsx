@@ -52,8 +52,6 @@ function Footer() {
           {/* <Icon className="navbar-icon" /> */}
 
           <h2 className="logo-placeholder">Sites & Lifestyle</h2>
-
-          <p className="footer-license">Licensed Real Estate – DRE #00000.</p>
           <p className="footer-description">
             Building Serviced Communities for Sustainable Living.
           </p>
@@ -190,8 +188,8 @@ function Footer() {
           Reserved
         </p>
         <div className="footer-bottom-links">
-          <a href="/">Term & Condition</a>
-          <a href="/">Policy & Privacy</a>
+          <a href="">Term & Condition</a>
+          <a href="">Policy & Privacy</a>
         </div>
       </div>
     </footer>
