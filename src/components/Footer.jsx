@@ -25,9 +25,7 @@ function Footer() {
     try {
       await subscribeNewsletter({ email });
 
-      setSuccess(
-        "Thank you for subscribing. You’ll now receive updates and insights from Sites & Lifestyle."
-      );
+      setSuccess("Thank you for signing up for our newsletters!");
 
       setEmail("");
 

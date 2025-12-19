@@ -48,7 +48,7 @@ function ClientFeedback() {
   return (
     <section className="client-feedback-wrapper">
       <div className="client-feedback-container">
-        <h2 className="client-feedback-title header">
+        <h2 className=" corevalue-header">
           <span className="primary">OUR HAPPY CLIENTS </span>
           <span className="secondary">TESTIMONIALS</span>
         </h2>

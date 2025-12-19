@@ -82,7 +82,7 @@ function About() {
       <section className="content">
         <OurServicesSection values={OurServices} />
       </section>
-      <section className="content">
+      <section className="container">
         <CoreValuesSection values={values} />
       </section>
       <section className="content">

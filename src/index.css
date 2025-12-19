@@ -41,7 +41,6 @@
 .containerx {
   display: grid;
   background: #ffffff;
-  font-family: "Inter", sans-serif;
 }
 .map {
   width: 800px;
@@ -183,7 +182,11 @@
   color: #ffffff;
   text-decoration: none;
 }
-
+.footer-bottom-links {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
 .footer-bottom-links a:hover {
   text-decoration: underline;
 }
@@ -215,7 +218,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 👈 THIS is the key */
+  justify-content: space-between;
   padding: 0 20px;
   height: 70px;
   position: relative;
@@ -231,9 +234,7 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 👈 THIS is the key */
-
-  /* box-shadow: 0px 1px #124a2b; */
+  justify-content: space-between;
 }
 
 .navbarNav {
@@ -1245,7 +1246,6 @@ button.viewMore:hover {
 
 .director-card {
   background: #ffffff;
-
   border-radius: 12px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1658,7 +1658,10 @@ button.viewMore:hover {
   .desktop-nav {
     display: none;
   }
-
+  .overview-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .mobile-menu-icon {
     display: block;
   }

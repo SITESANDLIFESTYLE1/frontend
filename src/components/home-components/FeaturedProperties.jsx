@@ -13,7 +13,6 @@ function FeaturedProperties({ properties = [] }) {
           <PropertyCard key={index} {...item} />
         ))}
       </div>
-
       <div className="view-more-wrapper">
         {properties.length > 3 && (
           <button

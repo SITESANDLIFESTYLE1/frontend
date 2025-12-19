@@ -130,7 +130,7 @@ function Home() {
         <HeroSlider slides={homeSlides} showButtons={true} />
       </section>
       <section className="container ">
-        <div className="layou t">
+        <div className="layout">
           <div className="text containerx">
             <h2 className="header primary header-section">
               <span className="primary">WELCOME TO </span>
@@ -155,7 +155,7 @@ function Home() {
         </div>
       </section>
       <section className="content">
-        <h2 className="header tin-text">
+        <h2 className="corevalue-header tin-text">
           <span className="primary">WHY OWNERS CHOOSE </span>
           <span className="secondary">SITES & LIFESTYLE</span>
         </h2>
