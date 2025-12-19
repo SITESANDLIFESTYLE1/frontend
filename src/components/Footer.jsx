@@ -188,8 +188,8 @@ function Footer() {
           Reserved
         </p>
         <div className="footer-bottom-links">
-          <a href="">Term & Condition</a>
-          <a href="">Policy & Privacy</a>
+          <a>Term & Condition</a>
+          <a>Policy & Privacy</a>
         </div>
       </div>
     </footer>
