@@ -1,14 +1,30 @@
-// Updated AmenitySection.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AmenityCard from "./AmenityCard";
 
 function AmenitySection({ amenities = [] }) {
   const [showAll, setShowAll] = useState(false);
+  const [itemsToShow, setItemsToShow] = useState(6);
 
-  const visibleAmenities = showAll ? amenities : amenities.slice(0, 6);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 600) {
+        setItemsToShow(3);
+      } else {
+        setItemsToShow(6);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const visibleAmenities = showAll
+    ? amenities
+    : amenities.slice(0, itemsToShow);
 
   return (
-    <div className="corevalue-grid ">
+    <div className="corevalue-grid">
       {visibleAmenities.map((item, index) => (
         <AmenityCard
           key={index}
@@ -18,7 +34,7 @@ function AmenitySection({ amenities = [] }) {
         />
       ))}
 
-      {amenities.length > 6 && (
+      {amenities.length > itemsToShow && (
         <div className="view-more-wrapper">
           <button
             onClick={() => setShowAll(!showAll)}

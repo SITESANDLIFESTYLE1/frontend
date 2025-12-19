@@ -53,6 +53,18 @@ function Home() {
   ];
   const amenities = [
     {
+      icon: FaWater,
+      title: "WATER RETICULATION",
+    },
+    {
+      icon: FaPlug,
+      title: "POWER DISTRIBUTION",
+    },
+    {
+      icon: FaWater,
+      title: "SEWAGE SYSTEM",
+    },
+    {
       icon: FiWifi,
       title: "FIBER OPTICS",
     },
@@ -73,16 +85,8 @@ function Home() {
       title: "ORCHARDS",
     },
     {
-      icon: FaWater,
-      title: "SEWAGE SYSTEM",
-    },
-    {
       icon: FiVideo,
       title: "CCTV",
-    },
-    {
-      icon: FaWater,
-      title: "WATER RETICULATION",
     },
     {
       icon: FiUsers,
@@ -95,10 +99,6 @@ function Home() {
     {
       icon: FaRoad,
       title: "VEHICULAR AND PEDESTRIAN PATHWAYS",
-    },
-    {
-      icon: FaPlug,
-      title: "POWER DISTRIBUTION",
     },
   ];
   const homeSlides = [
