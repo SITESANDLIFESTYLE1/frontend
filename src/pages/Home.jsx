@@ -2,6 +2,7 @@ import React from "react";
 import HeroSlider from "../components/HeroSlider";
 import AmenitySection from "../components/home-components/AmenitySection";
 import FeaturedProperties from "../components/home-components/FeaturedProperties";
+// eslint-disable-next-line
 import Newsletter from "../components/home-components/Newsletter";
 import ClientFeedback from "../components/home-components/ClientFeedback";
 import hero1 from "../assets/png/creek.png";
