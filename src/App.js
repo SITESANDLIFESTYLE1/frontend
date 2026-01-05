@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Affiliate from "./pages/Affiliate.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
