@@ -105,22 +105,26 @@ function Home() {
     {
       image: hero1,
       title: "Sustainable Lifestyle",
-      subtitle: "Premium Residential & Commercial Serviced Plots",
+      subtitle:
+        "We deliver premium serviced plots and innovative commercial developments.",
     },
     {
       image: hero2,
       title: "Sustainable Lifestyle",
-      subtitle: "Premium Residential & Commercial Serviced Plots",
+      subtitle:
+        "We deliver premium serviced plots and innovative commercial developments.",
     },
     {
       image: hero3,
       title: "Sustainable Lifestyle",
-      subtitle: "Premium Residential & Commercial Serviced Plots",
+      subtitle:
+        "We deliver premium serviced plots and innovative commercial developments.",
     },
     {
       image: hero4,
       title: "Sustainable Lifestyle",
-      subtitle: "Premium Residential & Commercial Serviced Plots",
+      subtitle:
+        "We deliver premium serviced plots and innovative commercial developments.",
     },
   ];
 
