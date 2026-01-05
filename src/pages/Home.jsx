@@ -34,7 +34,7 @@ function Home() {
     },
     {
       image: hero2,
-      title: "Shore - 500SQM",
+      title: "Shore – 500SQM",
       subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
       link: shore,
     },
