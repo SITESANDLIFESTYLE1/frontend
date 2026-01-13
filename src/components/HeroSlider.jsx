@@ -6,6 +6,7 @@ function HeroSlider({ slides = [], showButtons = false }) {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!slides.length) return;
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 8000);
@@ -18,14 +19,17 @@ function HeroSlider({ slides = [], showButtons = false }) {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`hero-slide ${
-            index === current ? "active-slide" : "inactive-slide"
-          }`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          className={`hero-slide ${index === current ? "active-slide" : ""}`}
         >
+          <div
+            className="hero-bg"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          />
+
           {index === current && (
             <div className="hero-overlay">
               <h1 className="hero-title">{slide.title}</h1>
+
               {slide.subtitle && (
                 <p className="hero-subtitle">{slide.subtitle}</p>
               )}
@@ -34,17 +38,13 @@ function HeroSlider({ slides = [], showButtons = false }) {
                 <div className="hero-buttons">
                   <button
                     className="hero-btn primary"
-                    onClick={() => {
-                      navigate("/contact");
-                    }}
+                    onClick={() => navigate("/contact")}
                   >
                     Schedule a Tour
                   </button>
                   <button
                     className="hero-btn secondary"
-                    onClick={() => {
-                      navigate("/affiliate");
-                    }}
+                    onClick={() => navigate("/affiliate")}
                   >
                     Become An Affiliate
                   </button>

@@ -1,7 +1,7 @@
 import CEO from "../../assets/webp/CEO.webp";
 function CeoSection() {
   return (
-    <section className="section containerx">
+    <section className="section container">
       <div className="layout">
         <div className="text">
           <p className="quote">

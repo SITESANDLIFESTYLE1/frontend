@@ -1,20 +1,22 @@
 import React from "react";
-import layout1 from "../../assets/jpeg/layout-one.jpeg";
-import layout2 from "../../assets/jpeg/layout-two.jpeg";
-import layout3 from "../../assets/jpeg/layout-three.jpeg";
-
+import monrovia1 from "../../assets/jpg/monrovia1.jpg";
+import monrovia2 from "../../assets/jpg/monrovia2.jpg";
+import monrovia4 from "../../assets/jpeg/monrovia4.jpeg";
+import monrovia3 from "../../assets/jpeg/monrovia3.jpeg";
 import MonroviaSwiper from "./MonroviaSwiper";
-
 function MonroviaOverview() {
   const Monroviaslides = [
     {
-      image: layout1,
+      image: monrovia1,
     },
     {
-      image: layout2,
+      image: monrovia2,
     },
     {
-      image: layout3,
+      image: monrovia3,
+    },
+    {
+      image: monrovia4,
     },
   ];
   return (
@@ -23,7 +25,8 @@ function MonroviaOverview() {
         <div className="layout-image containerx">
           <MonroviaSwiper slides={Monroviaslides} />
         </div>
-        <div className="text containerx">
+
+        <div className="text container">
           <h2 className="header">
             <span className="primary"> Sites And Lifestyle</span>
             <span className="secondary"> Monrovia Orchards</span>

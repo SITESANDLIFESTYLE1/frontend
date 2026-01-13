@@ -1,9 +1,13 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Projects";
+import QueenAmina from "./pages/QueenAmina";
+import Monrovia from "./pages/Monrovia";
 import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
+
 import Affiliate from "./pages/Affiliate.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import { useEffect } from "react";
@@ -32,9 +36,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/projects/queenAmina" element={<QueenAmina />} />
+          <Route path="/projects/monrovia" element={<Monrovia />} />
           <Route path="/affiliate" element={<Affiliate />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

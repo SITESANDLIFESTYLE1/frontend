@@ -1,64 +1,72 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import HeroSlider from "../components/HeroSlider";
-import AllFeaturedProperties from "../components/project-components/AllFeaturedProperties";
-import ProjectLayout from "../components/project-components/ProjectLayout";
-import MonroviaOverview from "../components/project-components/MonroviaOverview";
+import monrovia1 from "../assets/jpg/monrovia1.jpg";
+import monrovia2 from "../assets/jpg/monrovia2.jpg";
 import hero1 from "../assets/png/creek.png";
 import hero2 from "../assets/png/SHORE.png";
 import hero3 from "../assets/png/spring.png";
 import hero4 from "../assets/png/Tide.png";
-import creek from "../assets/pdf/creek.pdf";
-import shore from "../assets/pdf/shore.pdf";
-import Spring from "../assets/pdf/Spring.pdf";
-import Tide from "../assets/pdf/Tide.pdf";
+import queenAmina1 from "../assets/jpeg/queen-amina-one.jpeg";
+import queenAmina2 from "../assets/jpeg/queen-amina-two.jpeg";
+import queenAmina3 from "../assets/jpeg/queen-amina-three.jpeg";
+import queenAmina4 from "../assets/jpeg/queen-amina-four.jpeg";
+import queenAmina5 from "../assets/jpeg/queen-amina-five.jpeg";
+
+const monroviaSlides = [monrovia1, monrovia2, hero2, hero1, hero3, hero4];
+const queenAminaSlides = [
+  queenAmina1,
+  queenAmina2,
+  queenAmina3,
+  queenAmina4,
+  queenAmina5,
+];
 
 function Projects() {
-  const properties = [
-    {
-      image: hero1,
-      title: "Creek – 190 SQM",
-      subtitle: "3 Bedroom Townhouse",
-      link: creek,
-    },
-    {
-      image: hero2,
-      title: "Shore – 500SQM",
-      subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
-      link: shore,
-    },
-    {
-      image: hero3,
-      title: "Spring – 250 SQM",
-      subtitle: "4 Bedroom Twin Villa",
-      link: Spring,
-    },
-    {
-      image: hero4,
-      title: "TIDE – 400 SQM",
-      subtitle: "4 Bedroom Villa +Maid’s room",
-      link: Tide,
-    },
-  ];
+  const [monroviaSlide, setMonroviaSlide] = useState(0);
+  const [queenAminaSlide, setQueenAminaSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMonroviaSlide((prev) => (prev + 1) % monroviaSlides.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setQueenAminaSlide((prev) => (prev + 1) % queenAminaSlides.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const projectSlides = [
     {
-      image: hero2,
-      title: "Monrovia Orchards",
-      subtitle: "",
+      image: monrovia1,
+      title: "Projects",
+      subtitle: "Monrovia Orchards",
     },
     {
-      image: hero1,
-      title: "Monrovia Orchards",
-      subtitle: "",
+      image: queenAmina1,
+      title: "Projects",
+      subtitle: "Queen Amina",
     },
     {
-      image: hero3,
-      title: "Monrovia Orchards",
-      subtitle: "",
+      image: monrovia2,
+      title: "Projects",
+      subtitle: "Monrovia Orchards",
     },
     {
-      image: hero4,
-      title: "Monrovia Orchards",
-      subtitle: "",
+      image: queenAmina2,
+      title: "Projects",
+      subtitle: "Queen Amina",
+    },
+    {
+      image: queenAmina3,
+      title: "Projects",
+      subtitle: "Queen Amina",
     },
   ];
 
@@ -67,15 +75,65 @@ function Projects() {
       <div>
         <HeroSlider slides={projectSlides} showButtons={false} />
       </div>
-      <section className="content">
-        <MonroviaOverview />
-      </section>
-      <section className="content">
-        <AllFeaturedProperties properties={properties} />
-      </section>
-      <section className="content">
-        <ProjectLayout />
-      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <main className="container">
+        <h2 className="header primary">
+          <span className="primary"> Featured</span>
+          <span className="secondary"> Projects</span>
+
+          <br />
+          <br />
+        </h2>
+        <div className="categories">
+          <div>
+            <img
+              src={queenAminaSlides[queenAminaSlide]}
+              alt="Queen Amina"
+              className="categoryImg"
+            />
+            <h2 className="categoryName primary">Queen Amina</h2>
+            <p className="amenity-desc">
+              Set on 8.5 hectares in Maitumbi, behind Hill-Top Model School,
+              Minna, Niger State, Queen Amina Estate is a well-planned community
+              of 56 units designed for quality living. Featuring a football
+              pitch, children’s playground, and other lifestyle amenities, it
+              offers a calm, family-friendly environment built for comfort and
+              lasting value.
+            </p>
+            <Link to="/projects/queenAmina" className="more-details">
+              More Details →
+            </Link>
+          </div>
+
+          <div>
+            <img
+              src={monroviaSlides[monroviaSlide]}
+              alt="Monrovia Orchards"
+              className="categoryImg"
+            />
+            <h2 className="categoryName primary">Monrovia Orchards</h2>
+            <p className="amenity-desc">
+              Monrovia Orchards is a serene, family-focused residential
+              community in Idu Sabo, set on 7.87 hectares behind Brains &
+              Hammers City. Comprising 163 thoughtfully planned homes, it blends
+              modern living with sustainability, lush orchards, and generous
+              green spaces to offer a calm, nature-inspired lifestyle.
+            </p>
+            <Link to="/projects/monrovia" className="more-details">
+              More Details →
+            </Link>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+      </main>
+
+      <br />
     </>
   );
 }

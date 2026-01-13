@@ -9,12 +9,14 @@ import hero1 from "../assets/png/creek.png";
 import hero2 from "../assets/png/SHORE.png";
 import hero3 from "../assets/png/spring.png";
 import hero4 from "../assets/png/Tide.png";
-import { FiWifi, FiSun, FiUsers, FiVideo } from "react-icons/fi";
+import { FiWifi, FiSun, FiUsers, FiVideo, FiDroplet } from "react-icons/fi";
 import {
   FaSwimmingPool,
   FaChild,
   FaTree,
-  FaWater,
+  FaRecycle,
+  // eslint-disable-next-line
+  FaIndustry,
   FaRoad,
   FaBuilding,
   FaPlug,
@@ -53,7 +55,7 @@ function Home() {
   ];
   const amenities = [
     {
-      icon: FaWater,
+      icon: FiDroplet,
       title: "WATER RETICULATION",
     },
     {
@@ -61,7 +63,8 @@ function Home() {
       title: "POWER DISTRIBUTION",
     },
     {
-      icon: FaWater,
+      icon: FaRecycle,
+      // icon: FaIndustry,
       title: "SEWAGE SYSTEM",
     },
     {
@@ -144,14 +147,14 @@ function Home() {
               Sites & Lifestyle Limited was established by the visionary
               founders of the Bilaad Group with a clear purpose: to make home
               ownership seamless, accessible, and aspirational. We specialize in
-              the development of serviced plots within well-gated, serene, and
-              family-friendly communities, thoughtfully designed to redefine
+              the development of serviced plots within welln gated, serene, and
+              family friendly communities, thoughtfully designed to redefine
               modern living.
               <br />
               Beyond residential developments, we also create vibrant commercial
               hubs and luxury hospitality experiences. Each project is carefully
-              crafted to blend contemporary amenities with lifestyle-driven
-              design—because we believe every space should inspire the life you
+              crafted to blend contemporary amenities with lifestyle driven
+              design because we believe every space should inspire the life you
               deserve.
             </p>
           </div>

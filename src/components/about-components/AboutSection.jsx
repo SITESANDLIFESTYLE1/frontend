@@ -20,9 +20,8 @@ export default function AboutSection() {
           <p className="">
             Beyond residential developments, we also create vibrant commercial
             hubs and luxury hospitality experiences. Each project is carefully
-            crafted to blend contemporary amenities with lifestyle-driven
-            design—because we believe every space should inspire the life you
-            deserve.
+            crafted to blend contemporary amenities with lifestyle driven design
+            because we believe every space should inspire the life you deserve.
           </p>
         </div>
 

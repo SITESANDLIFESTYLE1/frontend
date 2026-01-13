@@ -74,7 +74,7 @@ function Footer() {
             </li>
             <li
               onClick={() => {
-                navigate("/projects");
+                navigate("/projects/monrovia");
               }}
             >
               Available Properties
@@ -88,7 +88,14 @@ function Footer() {
           <ul>
             <li
               onClick={() => {
-                navigate("/projects");
+                navigate("/projects/queenAmina");
+              }}
+            >
+              Queen Amina
+            </li>
+            <li
+              onClick={() => {
+                navigate("/projects/monrovia");
               }}
             >
               Monrovia Orchards
