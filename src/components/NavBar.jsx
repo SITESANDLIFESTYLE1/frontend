@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { ReactComponent as Icon } from "../assets/svg/SL1.svg";
+import { ReactComponent as IconDark } from "../assets/svg/SL1.svg";
+import { ReactComponent as IconLight } from "../assets/svg/SL2.svg";
 import { FiMenu, FiX } from "react-icons/fi";
 
 function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const pathMatchRoute = (route) => route === location.pathname;
 
@@ -15,11 +17,32 @@ function NavBar() {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="navbar">
-      {/* Logo */}
+    <header
+      className={`navbar ${
+        scrolled ? "navbar-scrolled" : "navbar-transparent"
+      }`}
+    >
+      {/* Logo - switches between light and dark */}
       <div className="navbar-logo" onClick={() => goTo("/")}>
-        <Icon className="navbar-icon" />
+        {scrolled ? (
+          <IconDark className="navbar-icon" />
+        ) : (
+          <IconLight className="navbar-icon" />
+        )}
       </div>
 
       {/* Desktop Nav */}

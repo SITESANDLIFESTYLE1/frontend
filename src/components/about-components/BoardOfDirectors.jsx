@@ -6,6 +6,7 @@ import Aliyu from "../../assets/webp/Aliyu.webp";
 import Abdullahi from "../../assets/webp/Abdullahi.webp";
 import HonKhamisu from "../../assets/webp/HonKhamisu.webp";
 import Musa from "../../assets/webp/Musa.webp";
+import MusaAhijo from "../../assets/jpg/musa.JPG";
 
 function BoardOfDirectors() {
   const directors = [
@@ -44,11 +45,11 @@ function BoardOfDirectors() {
       title: "EXECUTIVE DIRECTOR",
       image: Musa,
     },
-    // {
-    //   name: "MUSA AHIJO",
-    //   title: "EXECUTIVE DIRECTOR",
-    //   image: "",
-    // },
+    {
+      name: "MUSA AHIJO",
+      title: "EXECUTIVE DIRECTOR",
+      image: MusaAhijo,
+    },
   ];
 
   return (
