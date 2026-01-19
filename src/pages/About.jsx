@@ -76,18 +76,27 @@ function About() {
       <section className="container">
         <AboutSection />
       </section>
-      <section className="content">
+      <section className="content amenity-card-box ">
         <CeoSection />
       </section>
       <section className="content">
         <OurServicesSection values={OurServices} />
       </section>
-      <section className="container">
+      <br />
+      <br />
+      <section className="container secondary-bg">
         <CoreValuesSection values={values} />
+        <br />
       </section>
-      <section className="content">
+      <br />
+      <br />
+      <section className="container">
         <BoardOfDirectors />
       </section>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

@@ -53,7 +53,7 @@ function BoardOfDirectors() {
   ];
 
   return (
-    <section className="directors-section containerx">
+    <section className="directors-section">
       <h2 className="directors-heading">
         <span className="primary">BOARD OF</span>
         <span className="secondary"> DIRECTORS</span>

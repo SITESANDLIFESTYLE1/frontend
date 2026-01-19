@@ -4,7 +4,7 @@ function AllFeaturedProperties({ properties = [] }) {
   const visibleProperties = properties.slice(0, 4);
 
   return (
-    <div className="featured-wrapper">
+    <div className="featured-wrapper content">
       <div className="all-property-section">
         {visibleProperties.map((item, index) => (
           <PropertyCard key={index} {...item} />

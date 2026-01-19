@@ -67,15 +67,31 @@ function Monrovia() {
       <div>
         <HeroSlider slides={projectSlides} showButtons={false} />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <section className="content">
         <MonroviaOverview />
       </section>
-      <section className="content">
+      <br />
+      <br />
+      <br />
+      <br />
+      <section className=" secondary-bg">
         <AllFeaturedProperties properties={properties} />
       </section>
+      <br />
+      <br />
+      <br />
+      <br />
       <section className="content">
         <ProjectLayout />
       </section>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

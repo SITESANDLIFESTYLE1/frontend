@@ -25,6 +25,7 @@ function Affiliate() {
       <section className="containerx">
         <AffiliateSection />
       </section>
+      <br />
     </>
   );
 }

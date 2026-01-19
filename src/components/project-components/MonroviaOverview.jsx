@@ -20,13 +20,13 @@ function MonroviaOverview() {
     },
   ];
   return (
-    <section className="section containerx">
+    <section className=" containerx">
       <div className="layout">
         <div className="layout-image containerx">
           <MonroviaSwiper slides={Monroviaslides} />
         </div>
 
-        <div className="text container">
+        <div className="text section">
           <h2 className="header">
             <span className="primary"> Sites And Lifestyle</span>
             <span className="secondary"> Monrovia Orchards</span>

@@ -2,6 +2,8 @@ import React from "react";
 import HeroSlider from "../components/HeroSlider";
 import AmenitySection from "../components/home-components/AmenitySection";
 import FeaturedProperties from "../components/home-components/FeaturedProperties";
+import OurServicesSection from "../components/about-components/OurServicesSection";
+import Overview from "../components/home-components/Overview";
 // eslint-disable-next-line
 import Newsletter from "../components/home-components/Newsletter";
 import ClientFeedback from "../components/home-components/ClientFeedback";
@@ -130,48 +132,41 @@ function Home() {
         "We deliver premium serviced plots and innovative commercial developments.",
     },
   ];
-
+  const OurServices = [
+    {
+      title: "PROPERTY DEVELOPMENT",
+      description:
+        "The planning, design, and construction of residential or commercial real estate turning rawland into premium, serviced plotsand lifestyle communities with modern infrastructure.",
+    },
+    {
+      title: "INVESTMENT ADVISOR",
+      description:
+        "Strategic insights to help inves-tors maximize returns offering tailored real estate investmentoptions, due diligence, and portfolio planning to ensure profitable outcomes.",
+    },
+    {
+      title: "ADVISORY SERVICES",
+      description:
+        "Expert guidance across the realestate value chain helping clients assess opportunities, manage risks, and make informed property decisions aligned with their goals.",
+    },
+    {
+      title: "PROJECT MANAGEMENT",
+      description:
+        "End-to-end coordination of real estate projects overseeing planning, execution, timelines, budgets, and quality to deliver successful developments efficiently and professionally.",
+    },
+  ];
   return (
     <>
       <section>
         <HeroSlider slides={homeSlides} showButtons={true} />
       </section>
-      <section className="container ">
-        <div className="layout">
-          <div className="text containerx">
-            <h2 className="header primary header-section">
-              <span className="primary">WELCOME TO </span>
-              <span className="secondary">SITES & LIFESTYLE</span>
-            </h2>
-            <p className="overview-text">
-              Sites & Lifestyle Limited was established by the visionary
-              founders of the Bilaad Group with a clear purpose: to make home
-              ownership seamless, accessible, and aspirational. We specialize in
-              the development of serviced plots within welln gated, serene, and
-              family friendly communities, thoughtfully designed to redefine
-              modern living.
-              <br />
-              Beyond residential developments, we also create vibrant commercial
-              hubs and luxury hospitality experiences. Each project is carefully
-              crafted to blend contemporary amenities with lifestyle driven
-              design because we believe every space should inspire the life you
-              deserve.
-            </p>
-          </div>
-          {/* <div className="layout-image container">Youtube Video Section</div> */}
-        </div>
+      <section className=" container secondary-bg">
+        <Overview />
       </section>
       <section className="content">
-        <h2 className="corevalue-header tin-text">
-          <span className="primary">WHY OWNERS CHOOSE </span>
-          <span className="secondary">SITES & LIFESTYLE</span>
-        </h2>
-        <p>
-          We provide innovative property solutions through trusted partnerships
-          and exceptional service, some of the service include.
-        </p>
-        <AmenitySection amenities={amenities} />
+        <OurServicesSection values={OurServices} />
       </section>
+      <br />
+      <br />
       <section className="containerx">
         <h2 className="header tin-text">
           <span className="primary">FEATURED</span>
@@ -179,12 +174,19 @@ function Home() {
         </h2>
         <FeaturedProperties properties={properties} />
       </section>
+      <br />
+      <br />
+      <section className="content ">
+        <AmenitySection amenities={amenities} />
+      </section>
+      <br />
+      <br />
+      <section className="secondary-bg">
+        <ClientFeedback />
+      </section>
       {/* <section className="containerx">
         <Newsletter />
       </section> */}
-      <section className="containerx">
-        <ClientFeedback />
-      </section>
     </>
   );
 }

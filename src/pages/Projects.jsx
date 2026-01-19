@@ -76,11 +76,7 @@ function Projects() {
         <HeroSlider slides={projectSlides} showButtons={false} />
       </div>
 
-      <br />
-      <br />
-      <br />
-
-      <main className="container">
+      <main className="container secondary-bg">
         <h2 className="header primary">
           <span className="primary"> Featured</span>
           <span className="secondary"> Projects</span>
@@ -90,12 +86,17 @@ function Projects() {
         </h2>
         <div className="categories">
           <div>
-            <img
-              src={queenAminaSlides[queenAminaSlide]}
-              alt="Queen Amina"
-              className="categoryImg"
-            />
-            <h2 className="categoryName primary">Queen Amina</h2>
+            <Link to="/projects/queenAmina">
+              <img
+                src={queenAminaSlides[queenAminaSlide]}
+                alt="Queen Amina"
+                className="categoryImg"
+              />{" "}
+              <br />
+              <br />
+              <h2 className="categoryName primary">Queen Amina</h2>
+            </Link>
+            <br />
             <p className="amenity-desc">
               Set on 8.5 hectares in Maitumbi, behind Hill-Top Model School,
               Minna, Niger State, Queen Amina Estate is a well-planned community
@@ -104,18 +105,25 @@ function Projects() {
               offers a calm, family-friendly environment built for comfort and
               lasting value.
             </p>
+            <br />
             <Link to="/projects/queenAmina" className="more-details">
               More Details →
             </Link>
           </div>
 
           <div>
-            <img
-              src={monroviaSlides[monroviaSlide]}
-              alt="Monrovia Orchards"
-              className="categoryImg"
-            />
-            <h2 className="categoryName primary">Monrovia Orchards</h2>
+            <Link to="/projects/monrovia">
+              <img
+                src={monroviaSlides[monroviaSlide]}
+                alt="Monrovia Orchards"
+                className="categoryImg"
+              />
+              <br />
+              <br />
+              <h2 className="categoryName primary">Monrovia Orchards</h2>
+            </Link>
+            <br />
+
             <p className="amenity-desc">
               Monrovia Orchards is a serene, family-focused residential
               community in Idu Sabo, set on 7.87 hectares behind Brains &
@@ -123,6 +131,7 @@ function Projects() {
               modern living with sustainability, lush orchards, and generous
               green spaces to offer a calm, nature-inspired lifestyle.
             </p>
+            <br />
             <Link to="/projects/monrovia" className="more-details">
               More Details →
             </Link>
