@@ -1,14 +1,19 @@
 import React from "react";
+import { ReactComponent as IconDark } from "../../assets/svg/SL1.svg";
+import { useNavigate } from "react-router-dom";
 
 function Overview() {
+  const navigate = useNavigate();
+
   return (
-    <section className="container ">
+    <section className="container">
       <div className="layout">
         <div className="text containerx">
           <h2 className="header primary">
             <span className="primary">WELCOME TO </span>
             <span className="secondary">SITES & LIFESTYLE</span>
           </h2>
+          <br />
           <p className="overview-text">
             Sites & Lifestyle Limited was established by the visionary founders
             of the Bilaad Group with a clear purpose: to make home ownership
@@ -16,15 +21,21 @@ function Overview() {
             development of serviced plots within welln gated, serene, and family
             friendly communities, thoughtfully designed to redefine modern
             living.
-            <br />
-            <br />
-            Beyond residential developments, we also create vibrant commercial
-            hubs and luxury hospitality experiences. Each project is carefully
-            crafted to blend contemporary amenities with lifestyle driven design
-            because we believe every space should inspire the life you deserve.
           </p>
+          <div className="readmore-buttons">
+            <button
+              className="hero-btn primary"
+              onClick={() => navigate("/about")}
+            >
+              learn more
+            </button>
+          </div>
         </div>
-        {/* <div className="layout-image container">Youtube Video Section</div> */}
+        <br />
+        <br />
+        <div className="layout-image container">
+          <IconDark />
+        </div>
       </div>
     </section>
   );

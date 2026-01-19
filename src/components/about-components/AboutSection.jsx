@@ -9,7 +9,7 @@ export default function AboutSection() {
             <span className="primary">ABOUT</span>
             <span className="secoundary"> SITES & LIFESTYLE</span>
           </h2>
-          <p className="">
+          <p className="overview-text">
             Sites & Lifestyle Limited was established by the visionary founders
             of the Bilaad Group with a clear purpose: to make home ownership
             seamless, accessible, and aspirational. We specialize in the
@@ -17,7 +17,7 @@ export default function AboutSection() {
             family-friendly communities, thoughtfully designed to redefine
             modern living.
           </p>
-          <p className="">
+          <p className="overview-text">
             Beyond residential developments, we also create vibrant commercial
             hubs and luxury hospitality experiences. Each project is carefully
             crafted to blend contemporary amenities with lifestyle driven design

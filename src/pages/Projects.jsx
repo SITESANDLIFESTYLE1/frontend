@@ -110,7 +110,6 @@ function Projects() {
               More Details →
             </Link>
           </div>
-
           <div>
             <Link to="/projects/monrovia">
               <img

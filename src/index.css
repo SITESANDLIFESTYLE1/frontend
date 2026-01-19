@@ -67,13 +67,6 @@ body {
 .header {
   text-align: center;
 }
-.header .welcome {
-  color: #124a2b;
-}
-
-.header .sites {
-  color: #b0915c;
-}
 
 .footer {
   position: relative;
@@ -380,7 +373,9 @@ body {
   display: flex;
   gap: 15px;
 }
-
+.readmore-buttons {
+  display: flex;
+}
 .hero-btn {
   padding: 12px 22px;
   border-radius: 10px;
@@ -394,7 +389,10 @@ body {
   background: #dbd6cc;
   color: #000;
 }
-
+.hero-btn.primary:hover {
+  background: #bc9a6c;
+  color: #000;
+}
 .hero-btn.secondary {
   background: transparent;
   border: 2px solid #dbd6cc;
@@ -413,6 +411,10 @@ body {
 
   .hero-title {
     font-size: 36px;
+  }
+  .readmore-buttons {
+    margin-top: 30px;
+    width: auto;
   }
 }
 
@@ -897,8 +899,8 @@ button.viewMore:hover {
 
 .view-more-btn {
   background: #bc9a6c;
-  padding: 10px 32px;
   color: white;
+  padding: 10px 32px;
   font-size: 14px;
   border-radius: 30px;
   font-weight: 600;
@@ -923,7 +925,6 @@ button.viewMore:hover {
     padding: 5%;
     grid-template-columns: 1fr;
   }
-
   .property-card-box img {
     height: 160px;
   }
@@ -932,13 +933,8 @@ button.viewMore:hover {
 .about-section {
   padding: 4rem 0;
 }
-
 .overview-text {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  text-align: justify;
   font-size: 1.15rem;
   line-height: 1.75;
   color: #474747;
@@ -1730,8 +1726,9 @@ button.viewMore:hover {
     display: none;
   }
   .overview-text {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
   }
   .mobile-menu-icon {
     display: block;
@@ -1753,14 +1750,12 @@ button.viewMore:hover {
     transition: background-color 0.3s ease;
   }
 
-  /* Add this - transparent mobile menu when navbar is transparent */
   .navbar-transparent .mobile-nav {
     background: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  /* Update mobile nav item colors for transparent state */
   .navbar-transparent .mobile-nav-item {
     color: #dbd6cc;
   }
@@ -1788,8 +1783,8 @@ button.viewMore:hover {
 }
 
 .categories {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 60px;
 }
 .categories a {
@@ -1854,4 +1849,18 @@ a {
 
 .notfound-btn:hover {
   opacity: 0.85;
+}
+@media (max-width: 768px) {
+  .layout-image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .categories {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .categories a {
+    width: 100%;
+  }
 }
