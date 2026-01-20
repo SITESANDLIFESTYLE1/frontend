@@ -6,9 +6,9 @@ function AffiliateSection() {
     <section className="contact-section">
       <div className="contact-container">
         <div className="contact-top">
-          <h1 className="primary">
+          <h2 className="primary">
             Fill out the form below to join our Affiliate Program.
-          </h1>
+          </h2>
         </div>
 
         <div className="contact-content">

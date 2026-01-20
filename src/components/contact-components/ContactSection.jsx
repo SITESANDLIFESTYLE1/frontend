@@ -11,11 +11,11 @@ export default function ContactSection() {
     <section className="contact-section">
       <div className="contact-container">
         <div className="contact-top">
-          <h2 className="hero-title primary"> CONTACT US</h2>
-          <p className="contact-form-subtext">
-            Fill out the form below to learn more about buying or selling a
-            house in your area.
-          </p>
+          <h3 className="primary content">
+            Complete the form below to connect with our team. From general
+            enquiries to private consultations or property tours, we’re here to
+            assist you.
+          </h3>
         </div>
 
         <div className="contact-content">
