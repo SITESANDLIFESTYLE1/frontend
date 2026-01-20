@@ -1,7 +1,12 @@
 import React from "react";
 import { ReactComponent as IconDark } from "../../assets/svg/SL1.svg";
 import { useNavigate } from "react-router-dom";
-
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaFacebookF,
+  FaXTwitter,
+} from "react-icons/fa6";
 function Overview() {
   const navigate = useNavigate();
 
@@ -32,6 +37,43 @@ function Overview() {
         <br />
         <div className="layout-image container">
           <IconDark />
+          <div className="overview-socials">
+            <a
+              href="https://www.instagram.com/sitesandlifestyle/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/sites-nd-lifestyle/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
+
+            <a
+              href="https://www.facebook.com/people/Sites-and-lifestyle/61571418703102/?sk=about"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://twitter.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <FaXTwitter />
+            </a>
+          </div>
         </div>
       </div>
     </section>

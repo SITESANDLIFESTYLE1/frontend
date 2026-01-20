@@ -1498,6 +1498,22 @@ button.viewMore:hover {
 .contact-right {
   flex: 1;
 }
+.overview-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.25rem;
+}
+.overview-socials a {
+  font-size: 1.25rem;
+  color: #124a2b;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.overview-socials a:hover {
+  color: #bc9a6c;
+  transform: translateY(-2px);
+}
 
 .contact-socials {
   margin-top: 2rem;
