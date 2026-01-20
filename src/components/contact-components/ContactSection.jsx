@@ -59,7 +59,7 @@ export default function ContactSection() {
               </a>
 
               <a
-                href="https://twitter.com/yourpage"
+                href="https://x.com/sitesnlifestyle?s=21&t=n5MWjzhowr31Kmogs_NMSQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
