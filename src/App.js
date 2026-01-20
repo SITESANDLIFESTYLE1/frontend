@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 import Affiliate from "./pages/Affiliate.jsx";
 import ScrollToTop from "./components/ScrollToTop";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/affiliate" element={<Affiliate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </Router>
       <ToastContainer />
