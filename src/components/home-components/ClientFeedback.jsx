@@ -4,14 +4,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 function ClientFeedback() {
   const testimonials = [
     {
-      name: "MIKEL SANI RAMON",
-      objective: "Property Management Trust",
-      text: `Warren Buffet says that when he hires people, he looks for three things:
-      "We look for intelligence, energy, and integrity..."
-      
-      I have never regretted having Sites and Lifestyle manage my property.`,
-    },
-    {
       name: "AISHA BELLO",
       objective: "Customer Experience",
       text: `From the first consultation to property handover, the experience was seamless.
@@ -28,6 +20,14 @@ function ClientFeedback() {
       objective: "Long-term Value",
       text: `What impressed me most was their long-term thinking.
       They focus on value, not just quick wins.`,
+    },
+    {
+      name: "MIKEL SANI RAMON",
+      objective: "Property Management Trust",
+      text: `Warren Buffet says that when he hires people, he looks for three things:
+      "We look for intelligence, energy, and integrity..."
+      
+      I have never regretted having Sites and Lifestyle manage my property.`,
     },
   ];
 
