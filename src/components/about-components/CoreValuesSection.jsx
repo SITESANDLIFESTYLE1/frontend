@@ -13,8 +13,8 @@ function CoreValuesSection({ values = [] }) {
           and exceptional service.
         </p>
       </div>
-
-      <div className="corevalue-grid">
+      <br />
+      <div className="corevalue-grid ">
         {values.map((item, index) => (
           <CoreValueCard
             key={index}

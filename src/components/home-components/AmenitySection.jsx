@@ -3,14 +3,14 @@ import AmenityCard from "./AmenityCard";
 
 function AmenitySection({ amenities = [] }) {
   const [showAll, setShowAll] = useState(false);
-  const [itemsToShow, setItemsToShow] = useState(6);
+  const [itemsToShow, setItemsToShow] = useState(8);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItemsToShow(3);
       } else {
-        setItemsToShow(6);
+        setItemsToShow(8);
       }
     };
     handleResize();
@@ -33,7 +33,7 @@ function AmenitySection({ amenities = [] }) {
         We provide innovative property solutions through trusted partnerships
         and exceptional service, some of the service include.
       </p>
-      <div className="corevalue-grid">
+      <div className="amenity-grid">
         {visibleAmenities.map((item, index) => (
           <AmenityCard
             key={index}

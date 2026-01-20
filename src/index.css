@@ -491,11 +491,6 @@ h2.header {
   margin-bottom: 25px;
   color: #444;
 }
-.amenity-section {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
 .amenity-card {
   list-style: none;
   display: flex;
@@ -603,13 +598,6 @@ button.viewMore:hover {
   margin-bottom: 2rem;
 }
 
-.amenity-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
 .grid-layout {
   width: 100%;
 }
@@ -680,20 +668,6 @@ button.viewMore:hover {
 
 .view-more-btn:hover {
   background: #0f3e23;
-}
-
-@media (max-width: 900px) {
-  .amenity-section {
-    padding: 5%;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .amenity-section {
-    padding: 5%;
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 .property-card {
@@ -946,7 +920,6 @@ button.viewMore:hover {
 }
 
 .about-left h2 {
-  font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -1085,14 +1058,19 @@ button.viewMore:hover {
   justify-content: center;
 }
 .corevalue-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1.75rem;
   justify-content: center;
 }
-
+.amenity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  justify-content: center;
+}
 .corevalue-card-box {
   background: #ffffff;
+  width: 400px;
   padding: 1.8rem 1.4rem;
   border-radius: 12px;
   text-align: center;
@@ -1107,14 +1085,14 @@ button.viewMore:hover {
 }
 
 .corevalue-title {
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 700;
   color: #124a2b;
   margin-bottom: 8px;
 }
 
 .corevalue-desc {
-  font-size: 13px;
+  font-size: 13px !important;
   color: #555;
   line-height: 1.5;
 }
@@ -1133,6 +1111,14 @@ button.viewMore:hover {
 
 @media (max-width: 600px) {
   .corevalue-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-card {
+    margin: 10%;
+  }
+  .amenity-grid {
     padding: 5%;
     grid-template-columns: 1fr;
   }
@@ -1277,10 +1263,11 @@ button.viewMore:hover {
 }
 
 .director-image {
+  margin-top: 1rem;
   width: 75%;
   height: 75%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 10px 10px;
   margin-bottom: 15px;
 }
 

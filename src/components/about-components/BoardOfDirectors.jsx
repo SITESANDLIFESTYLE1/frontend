@@ -69,6 +69,8 @@ function BoardOfDirectors() {
             />
             <h3 className="director-name">{director.name}</h3>
             <p className="director-title">{director.title}</p>
+            <br />
+            <br />
           </div>
         ))}
       </div>
