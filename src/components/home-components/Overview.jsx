@@ -24,7 +24,7 @@ function Overview() {
               className="hero-btn primary"
               onClick={() => navigate("/about")}
             >
-              learn more
+              Learn More
             </button>
           </div>
         </div>

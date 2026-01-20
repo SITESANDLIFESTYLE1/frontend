@@ -5,10 +5,7 @@ export default function AboutSection() {
     <section className="container about-section">
       <div className="about-layout">
         <div className="about-left column">
-          <h2 className="header tin-text">
-            <span className="primary">ABOUT</span>
-            <span className="secoundary"> SITES & LIFESTYLE</span>
-          </h2>
+          <h2 className="header tin-text primary">ABOUT SITES & LIFESTYLE</h2>
           <p className="overview-text">
             Sites & Lifestyle Limited was established by the visionary founders
             of the Bilaad Group with a clear purpose: to make home ownership
