@@ -82,6 +82,7 @@ function NavBar() {
       {menuOpen && (
         <div className="mobile-nav">
           {[
+            { label: "Home", path: "/" },
             { label: "About Us", path: "/about" },
             { label: "Project", path: "/projects" },
             { label: "Contact Us", path: "/contact" },

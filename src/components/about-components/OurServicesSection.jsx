@@ -3,11 +3,9 @@ import OurServices from "./OurServices";
 
 function OurServicesSection({ values = [] }) {
   return (
-    <div className="corevalue-section grid-layout">
+    <div className=" corevalue-section grid-layout">
       <div className="corevalue-header">
-        <h2 className="corevalue-main">
-          OUR <span>SERVICES</span>
-        </h2>
+        <h2 className="corevalue-main">OUR SERVICES</h2>
       </div>
 
       <div className="ourservices-grid">

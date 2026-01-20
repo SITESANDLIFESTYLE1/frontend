@@ -171,10 +171,7 @@ function Home() {
       <br />
       <br />
       <section className="containerx">
-        <h2 className="header tin-text">
-          <span className="primary">FEATURED</span>
-          <span className="secondary">PROPERTIES</span>
-        </h2>
+        <h2 className="header tin-text primary ">FEATURED PROPERTIES</h2>
         <FeaturedProperties properties={properties} />
       </section>
       <br />

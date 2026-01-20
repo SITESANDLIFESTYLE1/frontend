@@ -7,7 +7,7 @@ import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
 import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
 import OurServicesSection from "../components/about-components/OurServicesSection";
 // eslint-disable-next-line
-import abouthero from "../assets/jpeg/abouthero.jpeg";
+import hero1 from "../assets/png/aboutHero.png";
 
 function About() {
   const OurServices = [
@@ -62,7 +62,7 @@ function About() {
   ];
   const projectSlides = [
     {
-      image: "abouthero",
+      image: hero1,
       title: "About Us",
       text: "",
     },

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir", "Helvetica Neue", Helvetica;
 }
 html,
 body {
@@ -406,7 +406,7 @@ body {
 
 @media (max-width: 900px) {
   .hero-slider {
-    height: 70vh;
+    height: 50vh;
   }
 
   .hero-title {
@@ -441,8 +441,6 @@ body {
 .section {
   width: 100%;
   margin: 0 auto;
-
-  /* box-sizing: border-box; */
 }
 .container {
   width: 100%;
@@ -459,11 +457,9 @@ h2.header {
 }
 
 .tiny-text {
-  color: #bc9a6c;
   font-weight: 400;
 }
 .tin-text {
-  color: #bc9a6c;
   font-weight: 700;
 }
 
@@ -488,16 +484,12 @@ h2.header {
   margin: auto;
   max-width: 900px;
 }
-.content h2 {
-  /* margin: 40px; */
-}
+
 .content p {
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 25px;
-  /* margin: 40px auto; */
   color: #444;
-  /* text-align: center; */
 }
 .amenity-section {
   display: flex;
@@ -1207,7 +1199,6 @@ button.viewMore:hover {
 .title {
   font-size: 0.5rem;
   color: #555;
-  /* margin-top: 4px; */
   letter-spacing: 0.4px;
 }
 
@@ -1683,44 +1674,6 @@ button.viewMore:hover {
   cursor: pointer;
   color: #124a2b;
 }
-/* @media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-  .overview-text {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  .mobile-nav {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.97);
-    backdrop-filter: blur(8px);
-    display: flex;
-    flex-direction: column;
-    padding: 20px 30px;
-    gap: 18px;
-    z-index: 999;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .mobile-nav-item {
-    font-size: 16px;
-    font-weight: 600;
-    color: #444;
-    cursor: pointer;
-  }
-
-  .mobile-nav-item.active {
-    color: #124a2b;
-  }
-} */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;

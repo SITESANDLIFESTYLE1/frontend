@@ -9,10 +9,7 @@ function Overview() {
     <section className="container">
       <div className="layout">
         <div className="text containerx">
-          <h2 className="header primary">
-            <span className="primary">WELCOME TO </span>
-            <span className="secondary">SITES & LIFESTYLE</span>
-          </h2>
+          <h2 className="header primary">WELCOME TO SITES & LIFESTYLE</h2>
           <br />
           <p className="overview-text">
             Sites & Lifestyle Limited was established by the visionary founders
