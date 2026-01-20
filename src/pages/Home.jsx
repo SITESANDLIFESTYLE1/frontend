@@ -7,8 +7,8 @@ import Overview from "../components/home-components/Overview";
 // eslint-disable-next-line
 import Newsletter from "../components/home-components/Newsletter";
 import ClientFeedback from "../components/home-components/ClientFeedback";
-import hero1 from "../assets/png/creek.png";
-import hero2 from "../assets/png/SHORE.png";
+import hero1 from "../assets/png/SHORE.png";
+import hero2 from "../assets/png/creek.png";
 import hero3 from "../assets/png/spring.png";
 import hero4 from "../assets/png/Tide.png";
 import { FiWifi, FiSun, FiUsers, FiVideo, FiDroplet } from "react-icons/fi";
