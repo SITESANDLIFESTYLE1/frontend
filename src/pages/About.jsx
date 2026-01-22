@@ -14,17 +14,17 @@ function About() {
     {
       title: "PROPERTY DEVELOPMENT",
       description:
-        "The planning, design, and construction of residential or commercial real estate turning rawland into premium, serviced plotsand lifestyle communities with modern infrastructure.",
+        "The planning, design, and construction of residential or commercial real estate turning rawland into premium, serviced plots and lifestyle communities with modern infrastructure.",
     },
     {
       title: "INVESTMENT ADVISOR",
       description:
-        "Strategic insights to help inves-tors maximize returns offering tailored real estate investmentoptions, due diligence, and portfolio planning to ensure profitable outcomes.",
+        "Strategic insights to help investors maximize returns offering tailored real estate investment options, due diligence, and portfolio planning to ensure profitable outcomes.",
     },
     {
       title: "ADVISORY SERVICES",
       description:
-        "Expert guidance across the realestate value chain helping clients assess opportunities, manage risks, and make informed property decisions aligned with their goals.",
+        "Expert guidance across the real estate value chain helping clients assess opportunities, manage risks, and make informed property decisions aligned with their goals.",
     },
     {
       title: "PROJECT MANAGEMENT",

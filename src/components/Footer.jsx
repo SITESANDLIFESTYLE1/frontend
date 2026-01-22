@@ -193,8 +193,8 @@ function Footer() {
           Reserved
         </p>
         <div className="footer-bottom-links">
-          <a>Term & Condition</a>
-          <a>Policy & Privacy</a>
+          <p>Term & Condition</p>
+          <p>Policy & Privacy</p>
         </div>
       </div>
     </footer>
