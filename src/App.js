@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-
+import WhatsappButton from "./components/WhatsappButton";
 import Affiliate from "./pages/Affiliate.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import { useEffect } from "react";
@@ -45,6 +45,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollToTopButton />
+        <WhatsappButton />
         <Footer />
       </Router>
       <ToastContainer />

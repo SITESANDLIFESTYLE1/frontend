@@ -1,7 +1,8 @@
 import React from "react";
-import projectLayout from "../../assets/jpeg/projectLayout.jpeg";
+// import projectLayout from "../../assets/jpeg/projectLayout.jpeg";
+import projectLayout from "../../assets/jpeg/queen-amina-one.jpeg";
 
-function ProjectLayout() {
+function QueenAminaLayout() {
   return (
     <>
       <h2 className="header tin-text">
@@ -15,4 +16,4 @@ function ProjectLayout() {
   );
 }
 
-export default ProjectLayout;
+export default QueenAminaLayout;

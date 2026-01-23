@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaFacebookF,
   FaXTwitter,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 function Footer() {
@@ -70,7 +71,7 @@ function Footer() {
                 navigate("/affiliate");
               }}
             >
-              Affiliate Portal
+              Affiliate Sign Up
             </li>
             <li
               onClick={() => {
@@ -162,6 +163,14 @@ function Footer() {
               aria-label="Twitter"
             >
               <FaXTwitter />
+            </a>
+            <a
+              href="https://wa.me/2348144837998"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>

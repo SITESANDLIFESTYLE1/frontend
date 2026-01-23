@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSlider from "../components/HeroSlider";
 import AllFeaturedProperties from "../components/project-components/AllFeaturedProperties";
-import ProjectLayout from "../components/project-components/ProjectLayout";
+import MonroviaLayout from "../components/project-components/MonroviaLayout";
 import MonroviaOverview from "../components/project-components/MonroviaOverview";
 import hero1 from "../assets/png/creek.png";
 import hero2 from "../assets/png/SHORE.png";
@@ -86,7 +86,7 @@ function Monrovia() {
       <br />
       <br />
       <section className="content">
-        <ProjectLayout />
+        <MonroviaLayout />
       </section>
       <br />
       <br />

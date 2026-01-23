@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSlider from "../components/HeroSlider";
-import ProjectLayout from "../components/project-components/ProjectLayout";
+import QueenAminaLayout from "../components/project-components/QueenAminaLayout";
 import QueenAminaOverview from "../components/project-components/QueenAminaOverview";
 import hero1 from "../assets/jpeg/queen-amina-one.jpeg";
 import hero2 from "../assets/jpeg/queen-amina-two.jpeg";
@@ -54,7 +54,7 @@ function QueenAmina() {
       <br />
       <br />
       <section className="content">
-        <ProjectLayout />
+        <QueenAminaLayout />
       </section>
       <br />
       <br />
