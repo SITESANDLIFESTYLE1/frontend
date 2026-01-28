@@ -47,6 +47,9 @@ function NavBar() {
       <nav className="navbarNav desktop-nav">
         <ul className="navbarListItems">
           {[
+            ...(location.pathname !== "/"
+              ? [{ label: "Home", path: "/" }]
+              : []),
             { label: "About Us", path: "/about" },
             { label: "Projects", path: "/projects" },
             { label: "Contact Us", path: "/contact" },
