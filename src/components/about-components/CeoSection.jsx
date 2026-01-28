@@ -1,4 +1,3 @@
-import CEO from "../../assets/webp/CEO.webp";
 function CeoSection() {
   return (
     <section className="container ">
@@ -12,7 +11,13 @@ function CeoSection() {
         </div>
 
         <div className="profile">
-          <img src={CEO} alt="CEO" className="image" />
+          <img
+            src={
+              "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769608319/CEO_qcl6dt.webp"
+            }
+            alt="CEO"
+            className="image"
+          />
           <h3 className="name">YAHYA AHMAD RUFAI</h3>
           <p className="title">CHIEF EXECUTIVE OFFICER</p>
         </div>

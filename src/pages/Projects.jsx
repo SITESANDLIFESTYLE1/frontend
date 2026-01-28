@@ -44,7 +44,8 @@ function Projects() {
 
   const projectSlides = [
     {
-      image: monrovia1,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/v1769603641/monrovia1_ki57m3.jpg",
       title: "Projects",
       subtitle: "Monrovia Orchards",
     },

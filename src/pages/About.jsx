@@ -6,8 +6,6 @@ import CeoSection from "../components/about-components/CeoSection";
 import BoardOfDirectors from "../components/about-components/BoardOfDirectors";
 import { FiHeart, FiZap, FiAward, FiUsers, FiTrendingUp } from "react-icons/fi";
 import OurServicesSection from "../components/about-components/OurServicesSection";
-import hero1 from "../assets/png/aboutHero.png";
-import hero2 from "../assets/png/aboutHero1.png";
 
 function About() {
   const OurServices = [
@@ -62,12 +60,14 @@ function About() {
   ];
   const projectSlides = [
     {
-      image: hero1,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/f_jpg/q_auto/dpr_auto/aboutHero1_o8e4qd",
       title: "About Us",
       text: "",
     },
     {
-      image: hero2,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769607869/aboutHero_zlghsx.png",
       title: "About Us",
       text: "",
     },

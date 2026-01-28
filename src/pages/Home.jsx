@@ -108,8 +108,7 @@ function Home() {
   ];
   const homeSlides = [
     {
-      image:
-        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/v1769603641/monrovia1_ki57m3.jpg",
+      image: hero1,
       title: "Sustainable Lifestyle",
       subtitle:
         "We deliver premium serviced plots and innovative commercial developments.",

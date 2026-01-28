@@ -1,12 +1,6 @@
 import React from "react";
 import Chairman from "../../assets/webp/Chairman.webp";
-import DrSadiq from "../../assets/webp/DrSadiq.webp";
-import Ross from "../../assets/webp/Ross.webp";
-import Aliyu from "../../assets/webp/Aliyu.webp";
-import Abdullahi from "../../assets/webp/Abdullahi.webp";
-import HonKhamisu from "../../assets/webp/HonKhamisu.webp";
 import Musa from "../../assets/webp/Musa.webp";
-import MusaAhijo from "../../assets/jpg/musa.JPG";
 
 function BoardOfDirectors() {
   const directors = [
@@ -18,27 +12,32 @@ function BoardOfDirectors() {
     {
       name: "DR. SADIQ SULEIMAN ABDULLAH",
       title: "NON-EXECUTIVE DIRECTOR",
-      image: DrSadiq,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769610640/DrSadiq_kddxhx.webp",
     },
     {
       name: "ROSS OLUYEDE",
       title: "NON-EXECUTIVE DIRECTOR",
-      image: Ross,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769610761/Ross_x6obtk.webp",
     },
     {
       name: "ALIYU ALIYU",
       title: "INDEPENDENT DIRECTOR",
-      image: Aliyu,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769610549/Aliyu_bwenvz.webp",
     },
     {
       name: "ABDULLAHI IDRIS UMAR",
       title: "NON-EXECUTIVE DIRECTOR",
-      image: Abdullahi,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769610406/Abdullahi_nslxw5.webp",
     },
     {
       name: "HON. KHAMISU AHMED MAILANTARKI",
       title: "NON-EXECUTIVE DIRECTOR",
-      image: HonKhamisu,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769610700/HonKhamisu_wgswvr.webp",
     },
     {
       name: "MUSA MOHAMMED KOSHE",
@@ -48,7 +47,8 @@ function BoardOfDirectors() {
     {
       name: "MUSA AHIJO",
       title: "EXECUTIVE DIRECTOR",
-      image: MusaAhijo,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769611029/musa_l2z5ak.jpg",
     },
   ];
 
