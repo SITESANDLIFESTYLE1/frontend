@@ -36,7 +36,6 @@ function NavBar() {
         scrolled ? "navbar-scrolled" : "navbar-transparent"
       }`}
     >
-      {/* Logo - switches between light and dark */}
       <div className="navbar-logo" onClick={() => goTo("/")}>
         {scrolled ? (
           <IconDark className="navbar-icon" />
@@ -45,12 +44,11 @@ function NavBar() {
         )}
       </div>
 
-      {/* Desktop Nav */}
       <nav className="navbarNav desktop-nav">
         <ul className="navbarListItems">
           {[
             { label: "About Us", path: "/about" },
-            { label: "Project", path: "/projects" },
+            { label: "Projects", path: "/projects" },
             { label: "Contact Us", path: "/contact" },
             { label: "Affiliate", path: "/affiliate" },
           ].map((item) => (
@@ -73,18 +71,16 @@ function NavBar() {
         </ul>
       </nav>
 
-      {/* Mobile Toggle */}
       <div className="mobile-menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FiX /> : <FiMenu />}
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-nav">
           {[
             { label: "Home", path: "/" },
             { label: "About Us", path: "/about" },
-            { label: "Project", path: "/projects" },
+            { label: "Projects", path: "/projects" },
             { label: "Contact Us", path: "/contact" },
             { label: "Affiliate", path: "/affiliate" },
           ].map((item) => (

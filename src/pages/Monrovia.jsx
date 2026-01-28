@@ -16,25 +16,25 @@ function Monrovia() {
   const properties = [
     {
       image: hero1,
-      title: "Creek – 190 SQM",
+      title: "Creek – 190 SQM Plot",
       subtitle: "3 Bedroom Townhouse",
       link: creek,
     },
     {
       image: hero2,
-      title: "Shore – 500SQM",
+      title: "Shore – 500 SQM Plot",
       subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
       link: shore,
     },
     {
       image: hero3,
-      title: "Spring – 250 SQM",
+      title: "Spring – 250 SQM Plot",
       subtitle: "4 Bedroom Twin Villa",
       link: Spring,
     },
     {
       image: hero4,
-      title: "TIDE – 400 SQM",
+      title: "TIDE – 400 SQM Plot",
       subtitle: "4 Bedroom Villa +Maid’s room",
       link: Tide,
     },

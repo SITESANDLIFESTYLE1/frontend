@@ -1,9 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsappButton = () => {
-  //   const phoneNumber = "2348012345678"; // replace with your number (no +)
-  //   const message = "Hello, I would like to make an enquiry.";
-
   const whatsappLink = "https://wa.me/2348144837998";
 
   return (

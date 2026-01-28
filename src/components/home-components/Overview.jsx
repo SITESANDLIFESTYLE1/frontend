@@ -21,9 +21,8 @@ function Overview() {
             Sites & Lifestyle Limited was established by the visionary founders
             of the Bilaad Group with a clear purpose: to make home ownership
             seamless, accessible, and aspirational. We specialize in the
-            development of serviced plots within welln gated, serene, and family
-            friendly communities, thoughtfully designed to redefine modern
-            living.
+            development of serviced plots within gated communities, thoughtfully
+            designed to redefine modern living.
           </p>
           <div className="readmore-buttons">
             <button
