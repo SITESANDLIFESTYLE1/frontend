@@ -1257,7 +1257,6 @@ button.viewMore:hover {
   border-radius: 12px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-bottom: 20px;
 }
 
 .director-card:hover {
@@ -1287,6 +1286,7 @@ button.viewMore:hover {
   letter-spacing: 0.4px;
   color: #666;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
