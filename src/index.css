@@ -1286,7 +1286,7 @@ button.viewMore:hover {
   letter-spacing: 0.4px;
   color: #666;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 992px) {
