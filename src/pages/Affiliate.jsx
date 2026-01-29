@@ -1,18 +1,18 @@
 import React from "react";
 import AffiliateSection from "../components/AffiliateSection";
 import HeroSlider from "../components/HeroSlider";
-import hero1 from "../assets/jpg/affiliate.jpg";
-import hero2 from "../assets/jpg/affiliateHero.jpg";
 
 function Affiliate() {
   const affiliateSlides = [
     {
-      image: hero2,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673623/affiliateHero_fqdzhb.jpg",
       title: "Become An Affiliate",
       subtitle: "",
     },
     {
-      image: hero1,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673696/affiliate_hxiowz.jpg",
       title: "Become An Affiliate",
       subtitle: "",
     },

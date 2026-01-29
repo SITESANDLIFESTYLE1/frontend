@@ -2,35 +2,36 @@ import React from "react";
 import HeroSlider from "../components/HeroSlider";
 import ContactSection from "../components/contact-components/ContactSection";
 import MapSection from "../components/contact-components/MapSection";
-import hero1 from "../assets/png/contactHero.png";
-import hero2 from "../assets/png/contactHero2.png";
-import hero3 from "../assets/png/contactHero3.png";
-import hero4 from "../assets/png/contactHero4.png";
 
 function Contact() {
   const projectSlides = [
     {
-      image: hero3,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673117/contactHero3_wdj4fe.png",
       title: "Contact Us",
       text: "",
     },
     {
-      image: hero2,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673047/contactHero2_tx08t5.png",
       title: "Contact Us",
       text: "",
     },
     {
-      image: hero1,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769672865/contactHero_hkqmp5.png",
       title: "Contact Us",
       text: "",
     },
     {
-      image: hero2,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673047/contactHero2_tx08t5.png",
       title: "Contact Us",
       text: "",
     },
     {
-      image: hero4,
+      image:
+        "https://res.cloudinary.com/dy1uzkyuk/image/upload/q_auto/dpr_auto/v1769673253/contactHero4_thgwtw.png",
       title: "Contact Us",
       text: "",
     },

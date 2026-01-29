@@ -59,13 +59,13 @@ function Footer() {
         <div className="footer-col">
           <h4 className="footer-title">Our Company</h4>
           <ul>
-            <li
+            {/* <li
               onClick={() => {
                 navigate("/projects");
               }}
             >
               Serviced Plots
-            </li>
+            </li> */}
             <li
               onClick={() => {
                 navigate("/affiliate");
@@ -73,13 +73,13 @@ function Footer() {
             >
               Affiliate Sign Up
             </li>
-            <li
+            {/* <li
               onClick={() => {
                 navigate("/projects/monrovia");
               }}
             >
               Available Properties
-            </li>
+            </li> */}
             <li>Privacy Policy</li>
           </ul>
         </div>
