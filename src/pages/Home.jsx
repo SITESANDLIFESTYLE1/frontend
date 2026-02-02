@@ -32,15 +32,15 @@ function Home() {
   const properties = [
     {
       image: hero1,
-      title: "Creek – 190 SQM Plot",
-      subtitle: "3 Bedroom Townhouse",
-      link: creek,
-    },
-    {
-      image: hero2,
       title: "Shore – 500 SQM Plot",
       subtitle: "5 Bedroom Villa +2 Rooms Chalet +Maid’s room",
       link: shore,
+    },
+    {
+      image: hero2,
+      title: "Creek – 190 SQM Plot",
+      subtitle: "3 Bedroom Townhouse",
+      link: creek,
     },
     {
       image: hero3,

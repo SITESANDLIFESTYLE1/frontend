@@ -11,7 +11,25 @@ import creek from "../assets/pdf/creek.pdf";
 import shore from "../assets/pdf/shore.pdf";
 import Spring from "../assets/pdf/Spring.pdf";
 import Tide from "../assets/pdf/Tide.pdf";
-
+import AmenitySection from "../components/home-components/AmenitySection";
+import {
+  FaSwimmingPool,
+  FaChild,
+  FaTree,
+  FaRecycle,
+  // eslint-disable-next-line
+  FaIndustry,
+  FaRoad,
+  FaBuilding,
+  FaPlug,
+} from "react-icons/fa";
+import {
+  // FiWifi,
+  FiSun,
+  FiUsers,
+  FiVideo,
+  FiDroplet,
+} from "react-icons/fi";
 function Monrovia() {
   const properties = [
     {
@@ -61,7 +79,57 @@ function Monrovia() {
       subtitle: "",
     },
   ];
-
+  const amenities = [
+    {
+      icon: FiDroplet,
+      title: "WATER RETICULATION",
+    },
+    {
+      icon: FaPlug,
+      title: "POWER DISTRIBUTION",
+    },
+    {
+      icon: FaRecycle,
+      // icon: FaIndustry,
+      title: "SEWAGE SYSTEM",
+    },
+    // {
+    //   icon: FiWifi,
+    //   title: "FIBER OPTICS",
+    // },
+    {
+      icon: FaSwimmingPool,
+      title: "SWIMMING POOL",
+    },
+    {
+      icon: FaChild,
+      title: "CHILDREN PLAYGROUND",
+    },
+    {
+      icon: FiSun,
+      title: "SOLAR STRRETLIGHT",
+    },
+    {
+      icon: FaTree,
+      title: "ORCHARDS",
+    },
+    {
+      icon: FiVideo,
+      title: "CCTV",
+    },
+    {
+      icon: FiUsers,
+      title: "NEGBOURHOOD CENTER",
+    },
+    {
+      icon: FaBuilding,
+      title: "CLUBHOUSE",
+    },
+    {
+      icon: FaRoad,
+      title: "VEHICULAR AND PEDESTRIAN PATHWAYS",
+    },
+  ];
   return (
     <>
       <div>
@@ -80,6 +148,13 @@ function Monrovia() {
       <br />
       <section className=" secondary-bg">
         <AllFeaturedProperties properties={properties} />
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <section className="content ">
+        <AmenitySection amenities={amenities} />
       </section>
       <br />
       <br />

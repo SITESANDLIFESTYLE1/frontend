@@ -13,8 +13,6 @@ import Affiliate from "./pages/Affiliate.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   useEffect(() => {
@@ -48,7 +46,6 @@ function App() {
         <WhatsappButton />
         <Footer />
       </Router>
-      <ToastContainer />
     </>
   );
 }
