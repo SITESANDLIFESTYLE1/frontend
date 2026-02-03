@@ -11,7 +11,7 @@ import creek from "../assets/pdf/creek.pdf";
 import shore from "../assets/pdf/shore.pdf";
 import Spring from "../assets/pdf/Spring.pdf";
 import Tide from "../assets/pdf/Tide.pdf";
-import AmenitySection from "../components/home-components/AmenitySection";
+import MonroviaAmenities from "../components/project-components/MonroviaAmenities";
 import {
   FaSwimmingPool,
   FaChild,
@@ -153,8 +153,8 @@ function Monrovia() {
       <br />
       <br />
       <br />
-      <section className="content ">
-        <AmenitySection amenities={amenities} />
+      <section className="content">
+        <MonroviaAmenities amenities={amenities} />
       </section>
       <br />
       <br />

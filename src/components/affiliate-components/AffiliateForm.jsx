@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { becomeAffiliate } from "../api";
+import { becomeAffiliate } from "../../api";
 
 function AffiliateForm() {
   const [loading, setLoading] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import AffiliateSection from "../components/AffiliateSection";
+import AffiliateSection from "../components/affiliate-components/AffiliateSection";
 import HeroSlider from "../components/HeroSlider";
 
 function Affiliate() {
