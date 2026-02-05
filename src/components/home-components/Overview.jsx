@@ -18,11 +18,12 @@ function Overview() {
           <h2 className="header primary">WELCOME TO SITES & LIFESTYLE</h2>
           <br />
           <p className="overview-text">
-            Sites & Lifestyle Limited was established by the visionary founders
-            of the Bilaad Group with a clear purpose: to make home ownership
-            seamless, accessible, and aspirational. We specialize in the
-            development of serviced plots within gated communities, thoughtfully
-            designed to redefine modern living.
+            Sites & Lifestyle Limited was founded by the innovators behind the
+            Bilaad Group delivers seamless, accessible, and aspirational
+            homeownership through serviced plots in secure, serene, and family
+            oriented communities. We also develop commercial hubs and premium
+            hospitality assets, each designed with lifestyle-driven precision to
+            merge modern amenities with spaces that elevate everyday living
           </p>
           <div className="readmore-buttons">
             <button
