@@ -106,10 +106,7 @@ function About() {
       <br />
       <br />
       <br />
-      <div>
-        <h1 className="director-title">MUTMAINAH IS SMART</h1>
-        <p></p>
-      </div>
+      <div></div>
     </>
   );
 }

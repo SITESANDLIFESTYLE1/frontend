@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://s-l-backend-production.up.railway.app",
+  baseURL: "https://backend-production-6495.up.railway.app/",
 });
 
 export const sendContactForm = (data) => api.post("/api/contact", data);
